@@ -45,6 +45,14 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TArray<float> ParallaxSpeeds;
 
+	// The distance of the background from the camera.
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float CameraXOffset;
+
+	// The offset from the camera in the Z direction.
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float CameraZOffset;
+
 private:
 	UPROPERTY()
 	TArray<UMaterialInstanceDynamic*> LayerMIDs;

@@ -10,7 +10,7 @@ AParallaxBackground::AParallaxBackground()
     // Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
     PrimaryActorTick.bCanEverTick = true;
 
-    USceneComponent* RootSceneComp 
+    USceneComponent* RootSceneComp
         = CreateDefaultSubobject<USceneComponent>(TEXT("RootSceneComponent"));
 
     StaticBG
@@ -43,6 +43,9 @@ AParallaxBackground::AParallaxBackground()
     ParallaxSpeeds.Add(0.5f);
 
     RootComponent->SetWorldRotation(FQuat(FVector::ZAxisVector, PI / 2.f));
+
+    CameraXOffset = 2500.f;
+    CameraZOffset = -75.f;
 }
 
 // Called when the game starts or when spawned
@@ -62,6 +65,21 @@ void AParallaxBackground::BeginPlay()
         layer->SetMaterial(0, mid);
         LayerMIDs.Add(mid);
     }
+
+    APlayerCameraManager* camManager = UGameplayStatics::GetPlayerCameraManager(GetWorld(), 0);
+    check(camManager);
+    AActor* cameraActor = camManager->GetViewTarget();
+    check(cameraActor);
+
+    FVector cameraLocation = camManager->GetCameraLocation();
+
+    RootComponent->SetWorldLocation({
+    cameraLocation.X + CameraXOffset,
+    cameraLocation.Y,
+    cameraLocation.Z + CameraZOffset
+        });
+
+    AttachToActor(cameraActor, FAttachmentTransformRules::KeepRelativeTransform);
 }
 
 // Called every frame
@@ -71,13 +89,6 @@ void AParallaxBackground::Tick(float DeltaTime)
 
     FVector cameraLocation
         = UGameplayStatics::GetPlayerCameraManager(this, 0)->GetCameraLocation();
-
-    // TODO: Parameterize these magic numbers.
-    StaticBG->SetWorldLocation({
-        2000.0,
-        cameraLocation.Y,
-        cameraLocation.Z - 75
-        });    
 
     for (auto& mid : LayerMIDs)
     {
