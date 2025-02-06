@@ -92,7 +92,7 @@ void AParallaxBackground::Tick(float DeltaTime)
 
     for (auto& mid : LayerMIDs)
     {
-        mid->SetScalarParameterValue("CameraY", cameraLocation.Y);
+        mid->SetVectorParameterValue("CameraLocation", cameraLocation);
     }
 }
 
