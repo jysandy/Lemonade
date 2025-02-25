@@ -3,12 +3,23 @@
 
 #include "PlayableCharacter.h"
 #include "PaperFlipbookComponent.h"
+#include "Kismet/GameplayStatics.h"
+#include "Kismet/KismetSystemLibrary.h"
+#include "Utils.h"
+
+#include <algorithm>
 
 DEFINE_LOG_CATEGORY(LogPlayableCharacter);
 
 APlayableCharacter::APlayableCharacter()
 {
     PrimaryActorTick.bCanEverTick = true;
+
+    Shadow = CreateDefaultSubobject<UDecalComponent>(TEXT("Shadow"));
+    Shadow->SetupAttachment(RootComponent);
+    Shadow->SetRelativeRotation(FQuat(FVector::UnitY(), -PI / 2.0));
+    Shadow->DecalSize = FVector{ 180.0, DecalDimensions.X, DecalDimensions.Y };
+    SetShadowSizeAndOpacity(180.f);
 
     // Set size for collision capsule
     GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
@@ -39,6 +50,9 @@ void APlayableCharacter::BeginPlay()
 {
     // Call the base class  
     Super::BeginPlay();
+
+    ShadowMID = Shadow->CreateDynamicMaterialInstance();
+    Shadow->SetMaterial(0, ShadowMID);
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -71,6 +85,14 @@ void APlayableCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
         // Moving
         EnhancedInputComponent->BindAction(MoveAction,
             ETriggerEvent::Triggered, this, &APlayableCharacter::Move);
+
+        // Dash
+        EnhancedInputComponent->BindAction(DashAction,
+            ETriggerEvent::Started, this, &APlayableCharacter::Dash);
+        
+        // Attack
+        EnhancedInputComponent->BindAction(AttackAction,
+            ETriggerEvent::Started, this, &APlayableCharacter::Attack);
     }
     else
     {
@@ -102,6 +124,37 @@ void APlayableCharacter::Move(const FInputActionValue& Value)
     }
 }
 
+void APlayableCharacter::Dash(const FInputActionValue& Value)
+{
+    if (dashing) return; // Prevent multiple dashes at once
+
+    dashing = true;
+
+    //Set character gravity to 0, calculate dash direction and LaunchCharacter
+    GetCharacterMovement()->GravityScale = 0.0f;
+
+    FVector DashDirection = GetCharacterMovement()->GetCurrentAcceleration().GetSafeNormal();
+
+    if (DashDirection.IsNearlyZero())
+    {
+        DashDirection = GetActorForwardVector();
+    }
+
+    LaunchCharacter(DashDirection * dashPower, true, true);
+
+    // Set a timer to end the dash
+    GetWorldTimerManager().SetTimer(DashTimerHandle, this, &APlayableCharacter::StopDashing, dashLength, false);
+
+}
+
+void APlayableCharacter::StopDashing()
+{
+    // Re-enable gravity & Reset boolean
+    GetCharacterMovement()->GravityScale = 1.0f;
+    dashing = false;
+}
+
+
 void APlayableCharacter::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
@@ -119,6 +172,50 @@ void APlayableCharacter::Tick(float DeltaTime)
     }
 
     UpdateFlipbook();
+    UpdateShadowDecal();
+}
+
+void APlayableCharacter::ScaleShadowDecal(float scale)
+{
+    auto ScaledDimensions = scale * DecalDimensions;
+
+    Shadow->DecalSize.Y = ScaledDimensions.X;
+    Shadow->DecalSize.Z = ScaledDimensions.Y;
+}
+
+void APlayableCharacter::SetShadowSizeAndOpacity(float DistanceFromGround)
+{
+    auto ClampedDistance = std::max(DistanceFromGround, MinGroundDistance);
+
+    Shadow->DecalSize.X = ClampedDistance;
+    Shadow->SetRelativeLocation({ 0, 0, -ClampedDistance / 2.f });
+    float LerpAlpha = InverseLerpClamped(MinGroundDistance, MaxGroundDistance, ClampedDistance);
+    ScaleShadowDecal(FMath::Lerp(1.f, MaxShadowScale, LerpAlpha));
+   
+    if (ShadowMID)
+        ShadowMID->SetScalarParameterValue("OpacityScale", 
+            FMath::Lerp(1.f, MinShadowOpacity, LerpAlpha));
+}
+
+void APlayableCharacter::UpdateShadowDecal()
+{
+    FVector LineTraceStart = GetActorLocation();
+    FVector LineTraceEnd = LineTraceStart + FVector{ 0, 0, -1000 };
+    ECollisionChannel TraceChannel = ECC_Visibility;
+    FCollisionQueryParams QueryParams;
+    QueryParams.AddIgnoredActor(this);
+
+    FHitResult HitResult;
+    bool bHit = GetWorld()->LineTraceSingleByChannel(HitResult, LineTraceStart, LineTraceEnd, TraceChannel, QueryParams);
+
+    if (bHit)
+    {
+        SetShadowSizeAndOpacity(HitResult.Distance);
+    }
+    else
+    {
+        SetShadowSizeAndOpacity(180.f);
+    }
 }
 
 void APlayableCharacter::UpdateFlipbook()

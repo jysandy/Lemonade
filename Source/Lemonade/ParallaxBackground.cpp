@@ -3,6 +3,9 @@
 
 #include "ParallaxBackground.h"
 #include "Kismet/GameplayStatics.h"
+#include "PaperSprite.h"
+#include "Camera/CameraActor.h"
+#include "Camera/CameraComponent.h"
 
 // Sets default values
 AParallaxBackground::AParallaxBackground()
@@ -42,10 +45,27 @@ AParallaxBackground::AParallaxBackground()
     ParallaxSpeeds.Add(0.8f);
     ParallaxSpeeds.Add(0.5f);
 
-    RootComponent->SetWorldRotation(FQuat(FVector::ZAxisVector, PI / 2.f));
+    StaticBG->SetRelativeRotation(FRotator(0, 90, 0));
 
-    CameraXOffset = 2500.f;
-    CameraZOffset = -75.f;
+    DistanceFromCamera = 10000.f;
+}
+
+AActor* AParallaxBackground::FindSideScrollingCamera()
+{
+    TArray<AActor*> ActorsWithTag;
+    UGameplayStatics::GetAllActorsWithTag(GetWorld(),
+        TEXT("BP_SideScrollingCamera"),
+        ActorsWithTag);
+
+    for (AActor* Actor : ActorsWithTag)
+    {
+        if (Actor)
+        {
+            return Actor;
+        }
+    }
+
+    return nullptr;
 }
 
 // Called when the game starts or when spawned
@@ -66,20 +86,35 @@ void AParallaxBackground::BeginPlay()
         LayerMIDs.Add(mid);
     }
 
-    APlayerCameraManager* camManager = UGameplayStatics::GetPlayerCameraManager(GetWorld(), 0);
-    check(camManager);
-    AActor* cameraActor = camManager->GetViewTarget();
+    ACameraActor* cameraActor = Cast<ACameraActor>(FindSideScrollingCamera());
     check(cameraActor);
 
-    FVector cameraLocation = camManager->GetCameraLocation();
-
-    RootComponent->SetWorldLocation({
-    cameraLocation.X + CameraXOffset,
-    cameraLocation.Y,
-    cameraLocation.Z + CameraZOffset
-        });
-
     AttachToActor(cameraActor, FAttachmentTransformRules::KeepRelativeTransform);
+
+    // Position, rotate and scale the background 
+    // so that it fills the screen.
+    RootComponent->SetRelativeLocation({ DistanceFromCamera, 0, 0 });
+    RootComponent->SetRelativeRotation(FRotator());
+
+    float scale = ScaleFactor(cameraActor, DistanceFromCamera);
+
+    StaticBG->SetRelativeScale3D({ scale, 1.f, scale });
+}
+
+float AParallaxBackground::ScaleFactor(ACameraActor* cameraActor, float distance)
+{
+    UCameraComponent* cameraComponent = cameraActor->GetCameraComponent();
+
+    auto sprite = StaticBG->GetSprite();
+    auto bounds = StaticBG->GetLocalBounds();
+
+    float requiredZExtent = DistanceFromCamera
+        * FMath::Tan(FMath::DegreesToRadians(cameraComponent->FieldOfView) / 2.f);
+
+    float scaleFactor = requiredZExtent
+        / (bounds.BoxExtent.Z * cameraComponent->AspectRatio);
+
+    return scaleFactor;
 }
 
 // Called every frame

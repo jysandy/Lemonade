@@ -47,14 +47,16 @@ public:
 
 	// The distance of the background from the camera.
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	float CameraXOffset;
-
-	// The offset from the camera in the Z direction.
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	float CameraZOffset;
+	float DistanceFromCamera;
 
 private:
 	UPROPERTY()
 	TArray<UMaterialInstanceDynamic*> LayerMIDs;
+
+	AActor* FindSideScrollingCamera();
+
+	// The scale factor needed to make the background fit a 
+	// camera vertically.
+	float ScaleFactor(ACameraActor* cameraActor, float distance);
 
 };
