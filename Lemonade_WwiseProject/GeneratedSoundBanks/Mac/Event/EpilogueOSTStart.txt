@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2651676399	EpilogueOSTStart			\Default Work Unit\EpilogueOSTStart	
+

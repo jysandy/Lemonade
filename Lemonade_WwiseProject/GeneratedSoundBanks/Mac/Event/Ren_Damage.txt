@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	737493712	Ren_Damage			\Default Work Unit\Ren_Damage	
+

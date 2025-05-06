@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="154">
+	<SoundBanks>
+		<SoundBank Id="2174924519" Type="Event" GUID="{82B30FFF-075F-4D34-9E86-84A2F66907F8}" Language="SFX" Hash="{01A61E29-F1C8-829D-F6F6-A9E5ACEFBF0E}">
+			<ObjectPath>EndComicLoopStart</ObjectPath>
+			<ShortName>EndComicLoopStart</ShortName>
+			<Path>Event/EndComicLoopStart.bnk</Path>
+			<Media>
+				<File Id="577738924" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Ambient Vol4 Niagara Main.wav</ShortName>
+					<Path>Media/577738924.wem</Path>
+					<CachePath>32/{32D97FE6-F86F-C61A-F6B8-0AEDB69DADF9}.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2174924519" Name="EndComicLoopStart" ObjectPath="\Events\Default Work Unit\EndComicLoopStart" GUID="{82B30FFF-075F-4D34-9E86-84A2F66907F8}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="577738924"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{AF8968CD-0B8A-809A-5C22-C70947A1E2FE}</FileHash>
+</SoundBanksInfo>

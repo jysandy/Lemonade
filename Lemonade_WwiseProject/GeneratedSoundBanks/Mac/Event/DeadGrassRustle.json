@@ -1,0 +1,84 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "287583992",
+    "Type": "Event",
+    "GUID": "{FFCF8BA9-FF37-4AE1-B536-61D544CE195B}",
+    "Language": "SFX",
+    "Hash": "{73D04F31-4B33-A3D3-0EA1-186CA3D0488D}",
+    "ObjectPath": "DeadGrassRustle",
+    "ShortName": "DeadGrassRustle",
+    "Path": "Event/DeadGrassRustle.bnk",
+    "Media": [
+     {
+      "Id": "80433286",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "DeadGrass_Rustle_1.wav",
+      "Path": "Media/80433286.wem",
+      "CachePath": "7B/{7B1294E6-E1DE-C86A-EB2E-D707837B75F5}.wem"
+     },
+     {
+      "Id": "291366834",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "DeadGrass_Rustle_2.wav",
+      "Path": "Media/291366834.wem",
+      "CachePath": "38/{3819594B-561C-A793-E89F-1FD51C4F3549}.wem"
+     },
+     {
+      "Id": "423525504",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "DeadGrass_Rustle_3.wav",
+      "Path": "Media/423525504.wem",
+      "CachePath": "6F/{6FB821B6-381A-7F61-1BEA-EAFC0BA0C01F}.wem"
+     },
+     {
+      "Id": "756581966",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "DeadGrass_Rustle_4.wav",
+      "Path": "Media/756581966.wem",
+      "CachePath": "70/{702CF32D-26DA-9B56-AA68-9225E94BC98B}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "287583992",
+      "Name": "DeadGrassRustle",
+      "ObjectPath": "\\Events\\Default Work Unit\\DeadGrassRustle",
+      "GUID": "{FFCF8BA9-FF37-4AE1-B536-61D544CE195B}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.9825753",
+      "DurationMax": "1.4872154",
+      "MediaRefs": [
+       {
+        "Id": "80433286"
+       },
+       {
+        "Id": "291366834"
+       },
+       {
+        "Id": "423525504"
+       },
+       {
+        "Id": "756581966"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{754B2F9B-87E3-5381-F025-71F1D9F28D51}"
+ }
+}

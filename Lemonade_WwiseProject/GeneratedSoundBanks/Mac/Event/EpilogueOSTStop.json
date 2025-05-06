@@ -1,0 +1,33 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "4205670645",
+    "Type": "Event",
+    "GUID": "{5A4FBF45-90DF-4090-BEDF-037C99BB056D}",
+    "Language": "SFX",
+    "Hash": "{B53B0450-2543-EE51-4DF2-B1C2433B566B}",
+    "ObjectPath": "EpilogueOSTStop",
+    "ShortName": "EpilogueOSTStop",
+    "Path": "Event/EpilogueOSTStop.bnk",
+    "Events": [
+     {
+      "Id": "4205670645",
+      "Name": "EpilogueOSTStop",
+      "ObjectPath": "\\Events\\Default Work Unit\\EpilogueOSTStop",
+      "GUID": "{5A4FBF45-90DF-4090-BEDF-037C99BB056D}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{EB5DF6F1-D3B3-AB5E-6AD5-BA878D139ED0}"
+ }
+}

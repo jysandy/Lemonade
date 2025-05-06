@@ -15,15 +15,19 @@
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
+#include "InteractComponent.h"
+#include "Lemonade2DCharacter.h"
 
 #include "PlayableCharacter.generated.h"
 
 DECLARE_LOG_CATEGORY_EXTERN(LogPlayableCharacter, Log, All);
 
 UCLASS(config = Game)
-class LEMONADE_API APlayableCharacter : public APaperCharacter
+class LEMONADE_API APlayableCharacter : public ALemonade2DCharacter
 {
     GENERATED_BODY()
+
+#pragma region Input
 
     /** MappingContext */
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
@@ -45,6 +49,12 @@ class LEMONADE_API APlayableCharacter : public APaperCharacter
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
     UInputAction* DashAction;
 
+    /** Interact Input */
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
+    UInputAction* InteractAction;
+
+#pragma endregion
+
 public:
     APlayableCharacter();
 
@@ -65,6 +75,8 @@ public:
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = ShadowDecal)
     float MinShadowOpacity = 0.4f;
+
+#pragma region Flipbooks
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animation)
     UPaperFlipbook* IdleRightFlipbook;
@@ -96,17 +108,45 @@ public:
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animation)
     UPaperFlipbook* FallRight;
 
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animation)
+    UPaperFlipbook* DashLeftFlipbook;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animation)
+    UPaperFlipbook* DashRightFlipbook;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animation)
+    UPaperFlipbook* AttackLeftFlipbook;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animation)
+    UPaperFlipbook* AttackRightFlipbook;
+
+#pragma endregion
+
+    UFUNCTION(BlueprintCallable)
+    void ToggleRotation();
+
+    void SetMovementDirection(bool inMovingAlongY);
+
+    UFUNCTION(BlueprintCallable)
+    void Kill();
+
 protected:
 
     //Dash&Timer Variables
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
-    bool dashing = false;
+    UPROPERTY(BlueprintReadWrite, Category = "Dash")
+    bool bDashing = false;
+
+    UPROPERTY(BlueprintReadWrite, Category = "Dash")
+    bool bDashOnCooldown = false;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
-    float dashPower = 500.0f;
+    float DashPower = 500.0f;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
-    float dashLength = 0.3f;
+    float DashLength = 0.3f;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dash")
+    float DashCooldown = 1.f;
 
     FTimerHandle DashTimerHandle;
 
@@ -121,7 +161,12 @@ protected:
     UFUNCTION(BlueprintImplementableEvent, Category = "Combat")
     void Attack();
 
-protected:
+    UPROPERTY(BlueprintReadWrite)
+    bool bAttacking = false;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
+    float AttackDelay = 0.2f;
+
     // APawn interface
     virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
@@ -130,11 +175,19 @@ protected:
 
     virtual void Tick(float DeltaTime) override;
 
+    virtual void FellOutOfWorld(const UDamageType& DmgType) override;
+
     UFUNCTION(BlueprintCallable)
     bool IsFacingRight();
 
+    void Interact(const FInputActionValue& Value);
+
+    virtual void NotifyActorBeginOverlap(AActor* OtherActor) override;
+    virtual void NotifyActorEndOverlap(AActor* OtherActor) override;
 
 private:
+    float DefaultGravityScale;
+
     void SetShadowSizeAndOpacity(float distanceFromGround);
     void ScaleShadowDecal(float scale);
     void UpdateShadowDecal();
@@ -142,10 +195,13 @@ private:
     void SetRunningAnimation();
     void SetJumpingAnimation();
     void SetIdleAnimation();
+    void SetDashingAnimation();
+    void SetAttackingAnimation();
 
     bool FacingRight = true;
 
     UPROPERTY()
     UMaterialInstanceDynamic* ShadowMID;
 
+    UInteractComponent* GetClosestInteractible();
 };

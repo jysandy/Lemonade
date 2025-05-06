@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="154">
+	<SoundBanks>
+		<SoundBank Id="4010383720" Type="Event" GUID="{4C6EC277-D395-4CBB-AEED-D0EC73BDAA9C}" Language="SFX" Hash="{35852FCD-D087-1F7D-DA9A-494978A52738}">
+			<ObjectPath>TorchCrackle</ObjectPath>
+			<ShortName>TorchCrackle</ShortName>
+			<Path>Event/TorchCrackle.bnk</Path>
+			<Media>
+				<File Id="599581680" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Torch_SFX_MK2.wav</ShortName>
+					<Path>Media/599581680.wem</Path>
+					<CachePath>20/{2094D3C2-F3DC-81FB-DE6A-FAB31D82DBFC}.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="4010383720" Name="TorchCrackle" ObjectPath="\Events\Default Work Unit\TorchCrackle" GUID="{4C6EC277-D395-4CBB-AEED-D0EC73BDAA9C}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="599581680"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{1F61B750-4280-3095-3DBC-88C9FC993097}</FileHash>
+</SoundBanksInfo>

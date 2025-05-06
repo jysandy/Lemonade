@@ -1,0 +1,46 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2174924519",
+    "Type": "Event",
+    "GUID": "{82B30FFF-075F-4D34-9E86-84A2F66907F8}",
+    "Language": "SFX",
+    "Hash": "{01A61E29-F1C8-829D-F6F6-A9E5ACEFBF0E}",
+    "ObjectPath": "EndComicLoopStart",
+    "ShortName": "EndComicLoopStart",
+    "Path": "Event/EndComicLoopStart.bnk",
+    "Media": [
+     {
+      "Id": "577738924",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Ambient Vol4 Niagara Main.wav",
+      "Path": "Media/577738924.wem",
+      "CachePath": "32/{32D97FE6-F86F-C61A-F6B8-0AEDB69DADF9}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2174924519",
+      "Name": "EndComicLoopStart",
+      "ObjectPath": "\\Events\\Default Work Unit\\EndComicLoopStart",
+      "GUID": "{82B30FFF-075F-4D34-9E86-84A2F66907F8}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "577738924"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{19CA1303-9D05-BB00-7F4B-C57E3C865A66}"
+ }
+}

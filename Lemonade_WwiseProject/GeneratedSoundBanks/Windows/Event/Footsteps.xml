@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="154">
+	<SoundBanks>
+		<SoundBank Id="2385628198" Type="Event" GUID="{1BF908CF-9F52-41C4-8386-180D92CC90FA}" Language="SFX" Hash="{3D52389E-0787-5C1A-FDE4-D9E77BF0252A}">
+			<ObjectPath>Footsteps</ObjectPath>
+			<ShortName>Footsteps</ShortName>
+			<Path>Event/Footsteps.bnk</Path>
+			<Media>
+				<File Id="134441412" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Wood_Footstep_1.wav</ShortName>
+					<Path>Media/134441412.wem</Path>
+					<CachePath>00/{00000000-0000-0000-0000-000000000000}.wem</CachePath>
+				</File>
+				<File Id="152561508" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Leafy_Footstep_2.wav</ShortName>
+					<Path>Media/152561508.wem</Path>
+					<CachePath>00/{00000000-0000-0000-0000-000000000000}.wem</CachePath>
+				</File>
+				<File Id="306134501" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stone_Footstep_3.wav</ShortName>
+					<Path>Media/306134501.wem</Path>
+					<CachePath>00/{00000000-0000-0000-0000-000000000000}.wem</CachePath>
+				</File>
+				<File Id="312233278" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stone_Footstep_2.wav</ShortName>
+					<Path>Media/312233278.wem</Path>
+					<CachePath>00/{00000000-0000-0000-0000-000000000000}.wem</CachePath>
+				</File>
+				<File Id="331933879" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Leafy_Footstep_1.wav</ShortName>
+					<Path>Media/331933879.wem</Path>
+					<CachePath>00/{00000000-0000-0000-0000-000000000000}.wem</CachePath>
+				</File>
+				<File Id="404822791" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Wood_Footstep_5.wav</ShortName>
+					<Path>Media/404822791.wem</Path>
+					<CachePath>00/{00000000-0000-0000-0000-000000000000}.wem</CachePath>
+				</File>
+				<File Id="449627301" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Leafy_Footstep_5.wav</ShortName>
+					<Path>Media/449627301.wem</Path>
+					<CachePath>00/{00000000-0000-0000-0000-000000000000}.wem</CachePath>
+				</File>
+				<File Id="700645356" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Wood_Footstep_4.wav</ShortName>
+					<Path>Media/700645356.wem</Path>
+					<CachePath>00/{00000000-0000-0000-0000-000000000000}.wem</CachePath>
+				</File>
+				<File Id="851568479" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Wood_Footstep_3.wav</ShortName>
+					<Path>Media/851568479.wem</Path>
+					<CachePath>00/{00000000-0000-0000-0000-000000000000}.wem</CachePath>
+				</File>
+				<File Id="918872046" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Wood_Footstep_2.wav</ShortName>
+					<Path>Media/918872046.wem</Path>
+					<CachePath>00/{00000000-0000-0000-0000-000000000000}.wem</CachePath>
+				</File>
+				<File Id="922995584" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Leafy_Footstep_3.wav</ShortName>
+					<Path>Media/922995584.wem</Path>
+					<CachePath>00/{00000000-0000-0000-0000-000000000000}.wem</CachePath>
+				</File>
+				<File Id="940076832" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stone_Footstep_1.wav</ShortName>
+					<Path>Media/940076832.wem</Path>
+					<CachePath>00/{00000000-0000-0000-0000-000000000000}.wem</CachePath>
+				</File>
+				<File Id="947619485" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stone_Footstep_5.wav</ShortName>
+					<Path>Media/947619485.wem</Path>
+					<CachePath>00/{00000000-0000-0000-0000-000000000000}.wem</CachePath>
+				</File>
+				<File Id="1043082682" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stone_Footstep_4.wav</ShortName>
+					<Path>Media/1043082682.wem</Path>
+					<CachePath>00/{00000000-0000-0000-0000-000000000000}.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2385628198" Name="Footsteps" ObjectPath="\Events\Default Work Unit\Footsteps" GUID="{1BF908CF-9F52-41C4-8386-180D92CC90FA}" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1340207729" Id="2058049674" GUID="{5CD5B643-FB0F-4F4F-A8F8-7B6E78A05BFF}"/>
+							<MediaRefs>
+								<MediaRef Id="134441412"/>
+								<MediaRef Id="404822791"/>
+								<MediaRef Id="700645356"/>
+								<MediaRef Id="851568479"/>
+								<MediaRef Id="918872046"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1340207729" Id="1216965916" GUID="{9DD50E9D-3187-42C0-8DE7-C1D72F88E0C3}"/>
+							<MediaRefs>
+								<MediaRef Id="306134501"/>
+								<MediaRef Id="312233278"/>
+								<MediaRef Id="940076832"/>
+								<MediaRef Id="947619485"/>
+								<MediaRef Id="1043082682"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1340207729" Id="3032258722" GUID="{768B08D0-29E6-4FDE-A624-D5BF93685B50}" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="152561508"/>
+								<MediaRef Id="331933879"/>
+								<MediaRef Id="449627301"/>
+								<MediaRef Id="922995584"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</Events>
+			<SwitchGroups>
+				<SwitchGroup Id="1340207729" Name="Footsteps_Surfaces" ObjectPath="\Switches\Default Work Unit\Footsteps_Surfaces" GUID="{799F1AB9-280A-4232-9CCB-6F531443F761}">
+					<Switches>
+						<Switch Id="1216965916" Name="Stone" ObjectPath="\Switches\Default Work Unit\Footsteps_Surfaces\Stone" GUID="{9DD50E9D-3187-42C0-8DE7-C1D72F88E0C3}"/>
+						<Switch Id="2058049674" Name="Wood" ObjectPath="\Switches\Default Work Unit\Footsteps_Surfaces\Wood" GUID="{5CD5B643-FB0F-4F4F-A8F8-7B6E78A05BFF}"/>
+						<Switch Id="3032258722" Name="Leafy" ObjectPath="\Switches\Default Work Unit\Footsteps_Surfaces\Leafy" GUID="{768B08D0-29E6-4FDE-A624-D5BF93685B50}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{4CB7849E-4FC9-4D24-12A3-A6F61D198004}</FileHash>
+</SoundBanksInfo>

@@ -1,0 +1,46 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2651676399",
+    "Type": "Event",
+    "GUID": "{A7926B2B-F1C8-4A1A-AC05-A3AFF2059355}",
+    "Language": "SFX",
+    "Hash": "{7F6AC5FC-4D56-9121-3408-AFC8E57F7E69}",
+    "ObjectPath": "EpilogueOSTStart",
+    "ShortName": "EpilogueOSTStart",
+    "Path": "Event/EpilogueOSTStart.bnk",
+    "Media": [
+     {
+      "Id": "671075147",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Countryside Day Loop A.wav",
+      "Path": "Media/671075147.wem",
+      "CachePath": "A3/{A3EF237E-93CD-18C6-6ED3-CF10DB0E5AE0}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2651676399",
+      "Name": "EpilogueOSTStart",
+      "ObjectPath": "\\Events\\Default Work Unit\\EpilogueOSTStart",
+      "GUID": "{A7926B2B-F1C8-4A1A-AC05-A3AFF2059355}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "671075147"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{D1B54067-684A-9D15-6414-A38FC39F3DAF}"
+ }
+}

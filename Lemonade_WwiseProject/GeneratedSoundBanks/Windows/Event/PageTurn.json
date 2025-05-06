@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2536509721",
+    "Type": "Event",
+    "GUID": "{C9A48A90-97A5-4569-B58A-1B1B68880B6A}",
+    "Language": "SFX",
+    "Hash": "{01313EDA-1FA7-61A3-DDD8-B6D66E467FA3}",
+    "ObjectPath": "PageTurn",
+    "ShortName": "PageTurn",
+    "Path": "Event/PageTurn.bnk",
+    "Media": [
+     {
+      "Id": "780559778",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Page_Turn.wav",
+      "Path": "Media/780559778.wem",
+      "CachePath": "8F/{8F4E62FB-CA55-FD25-6B46-B0BF394DF111}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2536509721",
+      "Name": "PageTurn",
+      "ObjectPath": "\\Events\\Default Work Unit\\PageTurn",
+      "GUID": "{C9A48A90-97A5-4569-B58A-1B1B68880B6A}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.30776164",
+      "DurationMax": "0.36599234",
+      "MediaRefs": [
+       {
+        "Id": "780559778"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{CC092A65-BEDD-09C7-D520-FEBB89F700F6}"
+ }
+}

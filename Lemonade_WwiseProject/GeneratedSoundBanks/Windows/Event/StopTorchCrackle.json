@@ -1,0 +1,33 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2495255776",
+    "Type": "Event",
+    "GUID": "{6DD29BD4-B3C6-4944-87AA-DED21808CBA5}",
+    "Language": "SFX",
+    "Hash": "{03C9DFA2-FF1E-297D-14BD-AE38F372D0AC}",
+    "ObjectPath": "StopTorchCrackle",
+    "ShortName": "StopTorchCrackle",
+    "Path": "Event/StopTorchCrackle.bnk",
+    "Events": [
+     {
+      "Id": "2495255776",
+      "Name": "StopTorchCrackle",
+      "ObjectPath": "\\Events\\Default Work Unit\\StopTorchCrackle",
+      "GUID": "{6DD29BD4-B3C6-4944-87AA-DED21808CBA5}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{C5B900B1-8A27-D081-920C-D4B7EF1825AB}"
+ }
+}

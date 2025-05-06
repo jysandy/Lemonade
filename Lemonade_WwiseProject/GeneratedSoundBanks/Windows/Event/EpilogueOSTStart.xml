@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="154">
+	<SoundBanks>
+		<SoundBank Id="2651676399" Type="Event" GUID="{A7926B2B-F1C8-4A1A-AC05-A3AFF2059355}" Language="SFX" Hash="{7F6AC5FC-4D56-9121-3408-AFC8E57F7E69}">
+			<ObjectPath>EpilogueOSTStart</ObjectPath>
+			<ShortName>EpilogueOSTStart</ShortName>
+			<Path>Event/EpilogueOSTStart.bnk</Path>
+			<Media>
+				<File Id="671075147" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Countryside Day Loop A.wav</ShortName>
+					<Path>Media/671075147.wem</Path>
+					<CachePath>A3/{A3EF237E-93CD-18C6-6ED3-CF10DB0E5AE0}.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2651676399" Name="EpilogueOSTStart" ObjectPath="\Events\Default Work Unit\EpilogueOSTStart" GUID="{A7926B2B-F1C8-4A1A-AC05-A3AFF2059355}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="671075147"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{E902017D-311E-88C2-4C74-4023CCD8B7C3}</FileHash>
+</SoundBanksInfo>

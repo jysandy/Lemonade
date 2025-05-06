@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="154">
+	<SoundBanks>
+		<SoundBank Id="2625026092" Type="Event" GUID="{1F2DA119-A2C1-4D4B-84F1-0EBBF5E97679}" Language="SFX" Hash="{8E9DB0B9-AF6F-3913-007A-2B476087775C}">
+			<ObjectPath>Player_Slash</ObjectPath>
+			<ShortName>Player_Slash</ShortName>
+			<Path>Event/Player_Slash.bnk</Path>
+			<Media>
+				<File Id="590687599" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Player_Slash_1.wav</ShortName>
+					<Path>Media/590687599.wem</Path>
+					<CachePath>22/{228221AA-755F-AE8C-798F-1EE6A87CC0AB}.wem</CachePath>
+				</File>
+				<File Id="610651852" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Player_Slash_2.wav</ShortName>
+					<Path>Media/610651852.wem</Path>
+					<CachePath>3A/{3A7925AD-3B23-33A4-37B8-BCDF0CC1FE0C}.wem</CachePath>
+				</File>
+				<File Id="688049626" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Player_Slash_3.wav</ShortName>
+					<Path>Media/688049626.wem</Path>
+					<CachePath>FF/{FF9D3B5A-4973-2408-1CFB-62774C79A3DD}.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2625026092" Name="Player_Slash" ObjectPath="\Events\Default Work Unit\Player_Slash" GUID="{1F2DA119-A2C1-4D4B-84F1-0EBBF5E97679}" DurationType="OneShot" DurationMin="1" DurationMax="1.0125208">
+					<MediaRefs>
+						<MediaRef Id="590687599"/>
+						<MediaRef Id="610651852"/>
+						<MediaRef Id="688049626"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{41818E33-EB15-F237-30CB-47C73EB8F271}</FileHash>
+</SoundBanksInfo>

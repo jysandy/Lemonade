@@ -1,0 +1,108 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "555067025",
+    "Type": "Event",
+    "GUID": "{77E1D464-2D33-46B1-A2AD-5D2F60E8A473}",
+    "Language": "SFX",
+    "Hash": "{696D5D55-67C0-B3ED-604B-2C15AF96FB85}",
+    "ObjectPath": "Enemy_Damage",
+    "ShortName": "Enemy_Damage",
+    "Path": "Event/Enemy_Damage.bnk",
+    "Media": [
+     {
+      "Id": "14441101",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Enemy_Damage_2.wav",
+      "Path": "Media/14441101.wem",
+      "CachePath": "F7/{F7AB3363-BEEB-9292-221B-E1674918E064}.wem"
+     },
+     {
+      "Id": "187331942",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Enemy_Damage_1.wav",
+      "Path": "Media/187331942.wem",
+      "CachePath": "F2/{F2564204-0855-0F27-380E-C777B6D7760C}.wem"
+     },
+     {
+      "Id": "496540989",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Enemy_Damage_4.wav",
+      "Path": "Media/496540989.wem",
+      "CachePath": "84/{845BBA2B-BA6C-49A7-E390-D399235768EA}.wem"
+     },
+     {
+      "Id": "541262259",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Enemy_Damage_5.wav",
+      "Path": "Media/541262259.wem",
+      "CachePath": "BB/{BB5ACD89-2F84-E4D6-E7D0-59AB8E19BE4D}.wem"
+     },
+     {
+      "Id": "704059429",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Enemy_Damage_6.wav",
+      "Path": "Media/704059429.wem",
+      "CachePath": "E2/{E278F0B1-E07A-3E91-4E2B-F003D6A814D0}.wem"
+     },
+     {
+      "Id": "903866788",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Enemy_Damage_3.wav",
+      "Path": "Media/903866788.wem",
+      "CachePath": "84/{844E0856-7940-1F51-528C-B0A2991D3635}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "555067025",
+      "Name": "Enemy_Damage",
+      "ObjectPath": "\\Events\\Default Work Unit\\Enemy_Damage",
+      "GUID": "{77E1D464-2D33-46B1-A2AD-5D2F60E8A473}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.16154195",
+      "DurationMax": "1.0608844",
+      "MediaRefs": [
+       {
+        "Id": "14441101"
+       },
+       {
+        "Id": "187331942"
+       },
+       {
+        "Id": "496540989"
+       },
+       {
+        "Id": "541262259"
+       },
+       {
+        "Id": "704059429"
+       },
+       {
+        "Id": "903866788"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{5260BC2E-7D96-DEA6-1814-E7D15FB8E953}"
+ }
+}

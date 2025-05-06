@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="154">
+	<SoundBanks>
+		<SoundBank Id="223216111" Type="Event" GUID="{ED76017F-3C1B-4B7B-ADB4-E723ADA73382}" Language="SFX" Hash="{11551F20-6F08-3117-93C6-3077671533C0}">
+			<ObjectPath>StopWindmillCreak</ObjectPath>
+			<ShortName>StopWindmillCreak</ShortName>
+			<Path>Event/StopWindmillCreak.bnk</Path>
+			<Events>
+				<Event Id="223216111" Name="StopWindmillCreak" ObjectPath="\Events\Default Work Unit\StopWindmillCreak" GUID="{ED76017F-3C1B-4B7B-ADB4-E723ADA73382}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{601F8A2A-A0F6-BF12-CC73-F6C6FCE01957}</FileHash>
+</SoundBanksInfo>

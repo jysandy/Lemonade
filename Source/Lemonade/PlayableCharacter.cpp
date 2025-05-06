@@ -5,6 +5,7 @@
 #include "PaperFlipbookComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetSystemLibrary.h"
+#include "LemonadeGameInstance.h"
 #include "Utils.h"
 
 #include <algorithm>
@@ -51,8 +52,10 @@ void APlayableCharacter::BeginPlay()
     // Call the base class  
     Super::BeginPlay();
 
+    DefaultGravityScale = GetCharacterMovement()->GravityScale;
     ShadowMID = Shadow->CreateDynamicMaterialInstance();
     Shadow->SetMaterial(0, ShadowMID);
+    SetMovementDirection(true);
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -89,10 +92,14 @@ void APlayableCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
         // Dash
         EnhancedInputComponent->BindAction(DashAction,
             ETriggerEvent::Started, this, &APlayableCharacter::Dash);
-        
+
         // Attack
         EnhancedInputComponent->BindAction(AttackAction,
             ETriggerEvent::Started, this, &APlayableCharacter::Attack);
+
+        // Interact
+        EnhancedInputComponent->BindAction(InteractAction,
+            ETriggerEvent::Started, this, &APlayableCharacter::Interact);
     }
     else
     {
@@ -103,6 +110,9 @@ void APlayableCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 
 void APlayableCharacter::Move(const FInputActionValue& Value)
 {
+    // Don't move while attacking
+    if (bAttacking) return;
+
     // input is a Vector2D
     FVector2D MovementVector = Value.Get<FVector2D>();
 
@@ -126,11 +136,24 @@ void APlayableCharacter::Move(const FInputActionValue& Value)
 
 void APlayableCharacter::Dash(const FInputActionValue& Value)
 {
-    if (dashing) return; // Prevent multiple dashes at once
+    if (bDashOnCooldown) return;
+    if (bDashing) return; // Prevent multiple dashes at once
+    if (bAttacking) return; // Can't dash while attacking
 
-    dashing = true;
+    bDashing = true;
+    bDashOnCooldown = true;
 
-    //Set character gravity to 0, calculate dash direction and LaunchCharacter
+    FTimerHandle DashCooldownTimerHandle;
+    // TODO: Read from this in the blueprint
+    GetWorldTimerManager().SetTimer(DashCooldownTimerHandle, [this]()
+        {
+            bDashOnCooldown = false;
+        },
+        DashCooldown, false);
+
+    // Save the gravity scale since it may have been set 
+    // in the editor.
+    DefaultGravityScale = GetCharacterMovement()->GravityScale;
     GetCharacterMovement()->GravityScale = 0.0f;
 
     FVector DashDirection = GetCharacterMovement()->GetCurrentAcceleration().GetSafeNormal();
@@ -140,27 +163,25 @@ void APlayableCharacter::Dash(const FInputActionValue& Value)
         DashDirection = GetActorForwardVector();
     }
 
-    LaunchCharacter(DashDirection * dashPower, true, true);
+    LaunchCharacter(DashDirection * DashPower, true, true);
 
     // Set a timer to end the dash
-    GetWorldTimerManager().SetTimer(DashTimerHandle, this, &APlayableCharacter::StopDashing, dashLength, false);
+    GetWorldTimerManager().SetTimer(DashTimerHandle, this, &APlayableCharacter::StopDashing, DashLength, false);
 
 }
 
 void APlayableCharacter::StopDashing()
 {
     // Re-enable gravity & Reset boolean
-    GetCharacterMovement()->GravityScale = 1.0f;
-    dashing = false;
+    GetCharacterMovement()->GravityScale = DefaultGravityScale;
+    bDashing = false;
 }
-
 
 void APlayableCharacter::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
 
-    // TODO: Transform the velocity into camera space.
-    auto velocity = this->GetVelocity();
+    auto velocity = GetCameraRotatedVelocity();
 
     if (velocity.Y > 0)
     {
@@ -191,9 +212,9 @@ void APlayableCharacter::SetShadowSizeAndOpacity(float DistanceFromGround)
     Shadow->SetRelativeLocation({ 0, 0, -ClampedDistance / 2.f });
     float LerpAlpha = InverseLerpClamped(MinGroundDistance, MaxGroundDistance, ClampedDistance);
     ScaleShadowDecal(FMath::Lerp(1.f, MaxShadowScale, LerpAlpha));
-   
+
     if (ShadowMID)
-        ShadowMID->SetScalarParameterValue("OpacityScale", 
+        ShadowMID->SetScalarParameterValue("OpacityScale",
             FMath::Lerp(1.f, MinShadowOpacity, LerpAlpha));
 }
 
@@ -222,10 +243,17 @@ void APlayableCharacter::UpdateFlipbook()
 {
     auto flipbookComponent = this->GetSprite();
 
-    // TODO: Transform the velocity into camera space.
-    auto velocity = this->GetVelocity();
+    auto velocity = GetCameraRotatedVelocity();
 
-    if (GetMovementComponent()->IsFalling())
+    if (bDashing)
+    {
+        SetDashingAnimation();
+    }
+    else if (bAttacking)
+    {
+        SetAttackingAnimation();
+    }
+    else if (GetMovementComponent()->IsFalling())
     {
         SetJumpingAnimation();
     }
@@ -259,23 +287,33 @@ void APlayableCharacter::SetIdleAnimation()
         sprite->SetFlipbook(IdleLeftFlipbook);
 }
 
+void APlayableCharacter::SetDashingAnimation()
+{
+    auto sprite = this->GetSprite();
+
+    if (FacingRight)
+        sprite->SetFlipbook(DashRightFlipbook);
+    else
+        sprite->SetFlipbook(DashLeftFlipbook);
+}
+
+void APlayableCharacter::SetAttackingAnimation()
+{
+    auto sprite = this->GetSprite();
+
+    if (FacingRight)
+        sprite->SetFlipbook(AttackRightFlipbook);
+    else
+        sprite->SetFlipbook(AttackLeftFlipbook);
+}
+
 void APlayableCharacter::SetJumpingAnimation()
 {
     auto sprite = this->GetSprite();
 
-    // TODO: Transform the velocity into camera space.
-    auto velocity = this->GetVelocity();
+    auto velocity = GetCameraRotatedVelocity();
 
-    if (velocity.Z > -200 && velocity.Z < 200)
-    {
-        // Apex
-
-        if (FacingRight)
-            sprite->SetFlipbook(JumpApexRight);
-        else
-            sprite->SetFlipbook(JumpApexLeft);
-    }
-    else if (velocity.Z > 0)
+    if (velocity.Z > 0)
     {
         // Jump takeoff
 
@@ -284,7 +322,7 @@ void APlayableCharacter::SetJumpingAnimation()
         else
             sprite->SetFlipbook(JumpLiftoffLeft);
     }
-    else if (velocity.Z < 0)
+    else if (velocity.Z < -10.f)
     {
         // Falling
 
@@ -298,4 +336,107 @@ void APlayableCharacter::SetJumpingAnimation()
 bool APlayableCharacter::IsFacingRight()
 {
     return FacingRight;
+}
+
+void APlayableCharacter::ToggleRotation()
+{
+    SetMovementDirection(SideScrollingCamera->IsLookingDownPositiveX());
+}
+
+void APlayableCharacter::SetMovementDirection(bool inMovingAlongY)
+{
+    if (Controller != nullptr)
+    {
+        const FRotator ControllerRotation = Controller->GetControlRotation();
+
+        if (inMovingAlongY)
+        {
+            Controller->SetControlRotation(FRotator(ControllerRotation.Pitch,
+                0,
+                ControllerRotation.Roll));
+        }
+        else
+        {
+            Controller->SetControlRotation(FRotator(ControllerRotation.Pitch,
+                90,
+                ControllerRotation.Roll));
+        }
+    }
+}
+
+void APlayableCharacter::Kill()
+{
+    Destroy();
+
+    if (UWorld* World = GetWorld())
+    {
+        if (ULemonadeGameInstance* GameInstance = Cast<ULemonadeGameInstance>(UGameplayStatics::GetGameInstance(World)))
+        {
+            GameInstance->PlayerDied();
+        }
+    }
+}
+
+void APlayableCharacter::FellOutOfWorld(const UDamageType& DmgType)
+{
+    Super::FellOutOfWorld(DmgType);
+
+    Kill();
+}
+
+void APlayableCharacter::Interact(const FInputActionValue& Value)
+{
+    UInteractComponent* Interactible = GetClosestInteractible();
+
+    if (Interactible != nullptr)
+    {
+        Interactible->TriggerInteractEvent();
+    }
+}
+
+UInteractComponent* APlayableCharacter::GetClosestInteractible()
+{
+    TSet<UPrimitiveComponent*> OverlappingComponents;
+
+    GetOverlappingComponents(OverlappingComponents);
+
+    UInteractComponent* NearestInteractComponent = nullptr;
+    float NearestDistSquared = 1000000.f;
+
+    FVector PlayerLocation = GetActorLocation();
+
+    for (auto& Component : OverlappingComponents)
+    {
+        if (UInteractComponent* Interactible = Cast<UInteractComponent>(Component))
+        {
+            if (float DistSquared = FVector::DistSquared(PlayerLocation,
+                Interactible->GetComponentLocation()); DistSquared < NearestDistSquared)
+            {
+                NearestInteractComponent = Interactible;
+                NearestDistSquared = DistSquared;
+            }
+        }
+    }
+
+    return NearestInteractComponent;
+}
+
+void APlayableCharacter::NotifyActorBeginOverlap(AActor* OtherActor)
+{
+    auto Interactible = OtherActor->FindComponentByClass<UInteractComponent>();
+
+    if (Interactible)
+    {
+        Interactible->TriggerEnterEvent();
+    }
+}
+
+void APlayableCharacter::NotifyActorEndOverlap(AActor* OtherActor)
+{
+    auto Interactible = OtherActor->FindComponentByClass<UInteractComponent>();
+
+    if (Interactible)
+    {
+        Interactible->TriggerExitEvent();
+    }
 }

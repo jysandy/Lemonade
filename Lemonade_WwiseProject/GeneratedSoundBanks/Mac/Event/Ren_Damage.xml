@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="154">
+	<SoundBanks>
+		<SoundBank Id="737493712" Type="Event" GUID="{22446E83-3004-418E-A525-0CEC5C093D0B}" Language="SFX" Hash="{F8C6FD37-0E18-1356-FFD4-A35CBCB94EEF}">
+			<ObjectPath>Ren_Damage</ObjectPath>
+			<ShortName>Ren_Damage</ShortName>
+			<Path>Event/Ren_Damage.bnk</Path>
+			<Media>
+				<File Id="268332225" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Ren_Damage_2.wav</ShortName>
+					<Path>Media/268332225.wem</Path>
+					<CachePath>90/{90EB0BA9-525A-FA3E-F790-D54E2ED2BF31}.wem</CachePath>
+				</File>
+				<File Id="290318910" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Ren_Damage_1.wav</ShortName>
+					<Path>Media/290318910.wem</Path>
+					<CachePath>CB/{CB1D661B-BD2A-4254-5522-770C7AEF96AF}.wem</CachePath>
+				</File>
+				<File Id="373241317" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Ren_Damage_3.wav</ShortName>
+					<Path>Media/373241317.wem</Path>
+					<CachePath>E3/{E3693ECA-6923-D614-6BC7-55FD92A7431A}.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="737493712" Name="Ren_Damage" ObjectPath="\Events\Default Work Unit\Ren_Damage" GUID="{22446E83-3004-418E-A525-0CEC5C093D0B}" DurationType="OneShot" DurationMin="1.3173125" DurationMax="1.5890833">
+					<MediaRefs>
+						<MediaRef Id="268332225"/>
+						<MediaRef Id="290318910"/>
+						<MediaRef Id="373241317"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{D37C1491-D683-B007-746E-2F2604FDBB97}</FileHash>
+</SoundBanksInfo>

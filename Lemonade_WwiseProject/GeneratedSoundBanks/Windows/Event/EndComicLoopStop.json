@@ -1,0 +1,33 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1956097293",
+    "Type": "Event",
+    "GUID": "{49797858-4CD2-414E-829E-CF2A6974C8C1}",
+    "Language": "SFX",
+    "Hash": "{AEC57598-E0C4-FCFC-A69E-8972C18E17EC}",
+    "ObjectPath": "EndComicLoopStop",
+    "ShortName": "EndComicLoopStop",
+    "Path": "Event/EndComicLoopStop.bnk",
+    "Events": [
+     {
+      "Id": "1956097293",
+      "Name": "EndComicLoopStop",
+      "ObjectPath": "\\Events\\Default Work Unit\\EndComicLoopStop",
+      "GUID": "{49797858-4CD2-414E-829E-CF2A6974C8C1}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{BEEF74DC-B9CE-8FB6-DC87-2B41A8CACFE9}"
+ }
+}

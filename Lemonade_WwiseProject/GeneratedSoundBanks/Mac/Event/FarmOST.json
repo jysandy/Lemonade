@@ -1,0 +1,46 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2715424361",
+    "Type": "Event",
+    "GUID": "{8BDE453C-BB32-449F-BF50-2721A027A1AE}",
+    "Language": "SFX",
+    "Hash": "{E77B18D6-418A-99B2-AFFA-77C3E7A3DD31}",
+    "ObjectPath": "FarmOST",
+    "ShortName": "FarmOST",
+    "Path": "Event/FarmOST.bnk",
+    "Media": [
+     {
+      "Id": "545987374",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "LemonadeF5maj.wav",
+      "Path": "Media/545987374.wem",
+      "CachePath": "59/{5934E55F-8939-F907-ECAC-8EED1DF604E1}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2715424361",
+      "Name": "FarmOST",
+      "ObjectPath": "\\Events\\Default Work Unit\\FarmOST",
+      "GUID": "{8BDE453C-BB32-449F-BF50-2721A027A1AE}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "545987374"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{EA79BABE-8675-4229-D7F8-6DD05A4C4615}"
+ }
+}

@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2174924519	EndComicLoopStart			\Default Work Unit\EndComicLoopStart	
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="154">
+	<SoundBanks>
+		<SoundBank Id="3454543542" Type="Event" GUID="{1D62AB81-95D8-4302-9725-51E2CDC9777E}" Language="SFX" Hash="{3C5C6875-13CC-6990-2A70-34DA7B2010E0}">
+			<ObjectPath>MuralHumStart</ObjectPath>
+			<ShortName>MuralHumStart</ShortName>
+			<Path>Event/MuralHumStart.bnk</Path>
+			<Media>
+				<File Id="649666867" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Mural_Hum.wav</ShortName>
+					<Path>Media/649666867.wem</Path>
+					<CachePath>4A/{4A757DFA-03A4-9AD4-854C-F8CC1BECC074}.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3454543542" Name="MuralHumStart" ObjectPath="\Events\Default Work Unit\MuralHumStart" GUID="{1D62AB81-95D8-4302-9725-51E2CDC9777E}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="649666867"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{E8D391F8-278F-E644-2F89-5680C00B6E16}</FileHash>
+</SoundBanksInfo>

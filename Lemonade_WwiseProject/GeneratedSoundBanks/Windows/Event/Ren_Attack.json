@@ -1,0 +1,72 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "363320255",
+    "Type": "Event",
+    "GUID": "{7978CF86-E4CA-45F3-8A09-10D7259F8326}",
+    "Language": "SFX",
+    "Hash": "{D0D1D706-944A-21FC-DD8C-24F943F51942}",
+    "ObjectPath": "Ren_Attack",
+    "ShortName": "Ren_Attack",
+    "Path": "Event/Ren_Attack.bnk",
+    "Media": [
+     {
+      "Id": "62030602",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Ren_Attack_1.wav",
+      "Path": "Media/62030602.wem",
+      "CachePath": "07/{0756B4AF-3F7D-50F1-13F2-B5EEF3FAA911}.wem"
+     },
+     {
+      "Id": "586278153",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Ren_Attack_3.wav",
+      "Path": "Media/586278153.wem",
+      "CachePath": "7C/{7C57127E-0F9B-C5B7-DEE1-55B51185E93B}.wem"
+     },
+     {
+      "Id": "739775337",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Ren_Attack_2.wav",
+      "Path": "Media/739775337.wem",
+      "CachePath": "43/{43019BD8-BFA2-C921-F2E3-DD493BB649D9}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "363320255",
+      "Name": "Ren_Attack",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ren_Attack",
+      "GUID": "{7978CF86-E4CA-45F3-8A09-10D7259F8326}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.66154164",
+      "DurationMax": "0.6756667",
+      "MediaRefs": [
+       {
+        "Id": "62030602"
+       },
+       {
+        "Id": "586278153"
+       },
+       {
+        "Id": "739775337"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{55832878-7ABF-C6E9-EB17-9469D7EAEAA1}"
+ }
+}

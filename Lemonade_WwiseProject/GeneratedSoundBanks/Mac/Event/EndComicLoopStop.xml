@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="154">
+	<SoundBanks>
+		<SoundBank Id="1956097293" Type="Event" GUID="{49797858-4CD2-414E-829E-CF2A6974C8C1}" Language="SFX" Hash="{AEC57598-E0C4-FCFC-A69E-8972C18E17EC}">
+			<ObjectPath>EndComicLoopStop</ObjectPath>
+			<ShortName>EndComicLoopStop</ShortName>
+			<Path>Event/EndComicLoopStop.bnk</Path>
+			<Events>
+				<Event Id="1956097293" Name="EndComicLoopStop" ObjectPath="\Events\Default Work Unit\EndComicLoopStop" GUID="{49797858-4CD2-414E-829E-CF2A6974C8C1}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{0DFBEDD0-37A2-7DC3-E999-0AB2AB1F1546}</FileHash>
+</SoundBanksInfo>

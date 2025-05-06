@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="154">
+	<SoundBanks>
+		<SoundBank Id="3065686491" Type="Event" GUID="{3989F2C1-9CCB-49F5-ADDD-13D914568D7B}" Language="SFX" Hash="{537798C3-ABF5-9376-F23F-4F6A9B5F3CD5}">
+			<ObjectPath>HealthPickUp</ObjectPath>
+			<ShortName>HealthPickUp</ShortName>
+			<Path>Event/HealthPickUp.bnk</Path>
+			<Media>
+				<File Id="578162784" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Health_PU_Pop.wav</ShortName>
+					<Path>Media/578162784.wem</Path>
+					<CachePath>2F/{2F52E2DA-FBA8-99AF-89D7-D13C6FD55C2C}.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3065686491" Name="HealthPickUp" ObjectPath="\Events\Default Work Unit\HealthPickUp" GUID="{3989F2C1-9CCB-49F5-ADDD-13D914568D7B}" DurationType="OneShot" DurationMin="0.034829933" DurationMax="0.034829933">
+					<MediaRefs>
+						<MediaRef Id="578162784"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{181A8369-2147-155B-6BCD-99FF3460C116}</FileHash>
+</SoundBanksInfo>

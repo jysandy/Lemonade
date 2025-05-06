@@ -1,0 +1,46 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1275167351",
+    "Type": "Event",
+    "GUID": "{BBE76EAE-0BC5-4EE8-A791-403B9AE301ED}",
+    "Language": "SFX",
+    "Hash": "{768451AE-6F21-D968-9B56-F3F7F51D6B37}",
+    "ObjectPath": "WindmillCreak",
+    "ShortName": "WindmillCreak",
+    "Path": "Event/WindmillCreak.bnk",
+    "Media": [
+     {
+      "Id": "336165340",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Windmill_Creak.wav",
+      "Path": "Media/336165340.wem",
+      "CachePath": "3C/{3C2CD5DC-8546-5398-C3EA-692A62D705A0}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1275167351",
+      "Name": "WindmillCreak",
+      "ObjectPath": "\\Events\\Default Work Unit\\WindmillCreak",
+      "GUID": "{BBE76EAE-0BC5-4EE8-A791-403B9AE301ED}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "336165340"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{D6328EDE-8963-95E1-E8D8-9999EF2AED01}"
+ }
+}

@@ -1,0 +1,1118 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "RootPaths": {
+   "ProjectRoot": "../..",
+   "SourceFilesRoot": "../../.cache",
+   "SoundBanksRoot": ".",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "."
+  },
+  "DialogueEvents": [],
+  "SoundBanks": [
+   {
+    "Id": "223216111",
+    "Type": "Event",
+    "GUID": "{ED76017F-3C1B-4B7B-ADB4-E723ADA73382}",
+    "Language": "SFX",
+    "Hash": "{11551F20-6F08-3117-93C6-3077671533C0}",
+    "ObjectPath": "StopWindmillCreak",
+    "ShortName": "StopWindmillCreak",
+    "Path": "Event/StopWindmillCreak.bnk",
+    "Events": [
+     {
+      "Id": "223216111",
+      "Name": "StopWindmillCreak",
+      "ObjectPath": "\\Events\\Default Work Unit\\StopWindmillCreak",
+      "GUID": "{ED76017F-3C1B-4B7B-ADB4-E723ADA73382}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   },
+   {
+    "Id": "287583992",
+    "Type": "Event",
+    "GUID": "{FFCF8BA9-FF37-4AE1-B536-61D544CE195B}",
+    "Language": "SFX",
+    "Hash": "{73D04F31-4B33-A3D3-0EA1-186CA3D0488D}",
+    "ObjectPath": "DeadGrassRustle",
+    "ShortName": "DeadGrassRustle",
+    "Path": "Event/DeadGrassRustle.bnk",
+    "Media": [
+     {
+      "Id": "80433286",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "DeadGrass_Rustle_1.wav",
+      "Path": "Media/80433286.wem",
+      "CachePath": "7B/{7B1294E6-E1DE-C86A-EB2E-D707837B75F5}.wem"
+     },
+     {
+      "Id": "291366834",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "DeadGrass_Rustle_2.wav",
+      "Path": "Media/291366834.wem",
+      "CachePath": "38/{3819594B-561C-A793-E89F-1FD51C4F3549}.wem"
+     },
+     {
+      "Id": "423525504",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "DeadGrass_Rustle_3.wav",
+      "Path": "Media/423525504.wem",
+      "CachePath": "6F/{6FB821B6-381A-7F61-1BEA-EAFC0BA0C01F}.wem"
+     },
+     {
+      "Id": "756581966",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "DeadGrass_Rustle_4.wav",
+      "Path": "Media/756581966.wem",
+      "CachePath": "70/{702CF32D-26DA-9B56-AA68-9225E94BC98B}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "287583992",
+      "Name": "DeadGrassRustle",
+      "ObjectPath": "\\Events\\Default Work Unit\\DeadGrassRustle",
+      "GUID": "{FFCF8BA9-FF37-4AE1-B536-61D544CE195B}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.9825753",
+      "DurationMax": "1.4872154",
+      "MediaRefs": [
+       {
+        "Id": "80433286"
+       },
+       {
+        "Id": "291366834"
+       },
+       {
+        "Id": "423525504"
+       },
+       {
+        "Id": "756581966"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "336785206",
+    "Type": "Event",
+    "GUID": "{95718943-E0EC-40D4-A6C2-3D5947AF4994}",
+    "Language": "SFX",
+    "Hash": "{C7EA8CEF-54A1-639E-41BC-3434A3F553B7}",
+    "ObjectPath": "MuralHumStop",
+    "ShortName": "MuralHumStop",
+    "Path": "Event/MuralHumStop.bnk",
+    "Events": [
+     {
+      "Id": "336785206",
+      "Name": "MuralHumStop",
+      "ObjectPath": "\\Events\\Default Work Unit\\MuralHumStop",
+      "GUID": "{95718943-E0EC-40D4-A6C2-3D5947AF4994}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   },
+   {
+    "Id": "363320255",
+    "Type": "Event",
+    "GUID": "{7978CF86-E4CA-45F3-8A09-10D7259F8326}",
+    "Language": "SFX",
+    "Hash": "{D0D1D706-944A-21FC-DD8C-24F943F51942}",
+    "ObjectPath": "Ren_Attack",
+    "ShortName": "Ren_Attack",
+    "Path": "Event/Ren_Attack.bnk",
+    "Media": [
+     {
+      "Id": "62030602",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Ren_Attack_1.wav",
+      "Path": "Media/62030602.wem",
+      "CachePath": "07/{0756B4AF-3F7D-50F1-13F2-B5EEF3FAA911}.wem"
+     },
+     {
+      "Id": "586278153",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Ren_Attack_3.wav",
+      "Path": "Media/586278153.wem",
+      "CachePath": "7C/{7C57127E-0F9B-C5B7-DEE1-55B51185E93B}.wem"
+     },
+     {
+      "Id": "739775337",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Ren_Attack_2.wav",
+      "Path": "Media/739775337.wem",
+      "CachePath": "43/{43019BD8-BFA2-C921-F2E3-DD493BB649D9}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "363320255",
+      "Name": "Ren_Attack",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ren_Attack",
+      "GUID": "{7978CF86-E4CA-45F3-8A09-10D7259F8326}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.66154164",
+      "DurationMax": "0.6756667",
+      "MediaRefs": [
+       {
+        "Id": "62030602"
+       },
+       {
+        "Id": "586278153"
+       },
+       {
+        "Id": "739775337"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "555067025",
+    "Type": "Event",
+    "GUID": "{77E1D464-2D33-46B1-A2AD-5D2F60E8A473}",
+    "Language": "SFX",
+    "Hash": "{696D5D55-67C0-B3ED-604B-2C15AF96FB85}",
+    "ObjectPath": "Enemy_Damage",
+    "ShortName": "Enemy_Damage",
+    "Path": "Event/Enemy_Damage.bnk",
+    "Media": [
+     {
+      "Id": "14441101",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Enemy_Damage_2.wav",
+      "Path": "Media/14441101.wem",
+      "CachePath": "F7/{F7AB3363-BEEB-9292-221B-E1674918E064}.wem"
+     },
+     {
+      "Id": "187331942",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Enemy_Damage_1.wav",
+      "Path": "Media/187331942.wem",
+      "CachePath": "F2/{F2564204-0855-0F27-380E-C777B6D7760C}.wem"
+     },
+     {
+      "Id": "496540989",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Enemy_Damage_4.wav",
+      "Path": "Media/496540989.wem",
+      "CachePath": "84/{845BBA2B-BA6C-49A7-E390-D399235768EA}.wem"
+     },
+     {
+      "Id": "541262259",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Enemy_Damage_5.wav",
+      "Path": "Media/541262259.wem",
+      "CachePath": "BB/{BB5ACD89-2F84-E4D6-E7D0-59AB8E19BE4D}.wem"
+     },
+     {
+      "Id": "704059429",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Enemy_Damage_6.wav",
+      "Path": "Media/704059429.wem",
+      "CachePath": "E2/{E278F0B1-E07A-3E91-4E2B-F003D6A814D0}.wem"
+     },
+     {
+      "Id": "903866788",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Enemy_Damage_3.wav",
+      "Path": "Media/903866788.wem",
+      "CachePath": "84/{844E0856-7940-1F51-528C-B0A2991D3635}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "555067025",
+      "Name": "Enemy_Damage",
+      "ObjectPath": "\\Events\\Default Work Unit\\Enemy_Damage",
+      "GUID": "{77E1D464-2D33-46B1-A2AD-5D2F60E8A473}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.16154195",
+      "DurationMax": "1.0608844",
+      "MediaRefs": [
+       {
+        "Id": "14441101"
+       },
+       {
+        "Id": "187331942"
+       },
+       {
+        "Id": "496540989"
+       },
+       {
+        "Id": "541262259"
+       },
+       {
+        "Id": "704059429"
+       },
+       {
+        "Id": "903866788"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "737493712",
+    "Type": "Event",
+    "GUID": "{22446E83-3004-418E-A525-0CEC5C093D0B}",
+    "Language": "SFX",
+    "Hash": "{F8C6FD37-0E18-1356-FFD4-A35CBCB94EEF}",
+    "ObjectPath": "Ren_Damage",
+    "ShortName": "Ren_Damage",
+    "Path": "Event/Ren_Damage.bnk",
+    "Media": [
+     {
+      "Id": "268332225",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Ren_Damage_2.wav",
+      "Path": "Media/268332225.wem",
+      "CachePath": "90/{90EB0BA9-525A-FA3E-F790-D54E2ED2BF31}.wem"
+     },
+     {
+      "Id": "290318910",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Ren_Damage_1.wav",
+      "Path": "Media/290318910.wem",
+      "CachePath": "CB/{CB1D661B-BD2A-4254-5522-770C7AEF96AF}.wem"
+     },
+     {
+      "Id": "373241317",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Ren_Damage_3.wav",
+      "Path": "Media/373241317.wem",
+      "CachePath": "E3/{E3693ECA-6923-D614-6BC7-55FD92A7431A}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "737493712",
+      "Name": "Ren_Damage",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ren_Damage",
+      "GUID": "{22446E83-3004-418E-A525-0CEC5C093D0B}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.3173125",
+      "DurationMax": "1.5890833",
+      "MediaRefs": [
+       {
+        "Id": "268332225"
+       },
+       {
+        "Id": "290318910"
+       },
+       {
+        "Id": "373241317"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "1275167351",
+    "Type": "Event",
+    "GUID": "{BBE76EAE-0BC5-4EE8-A791-403B9AE301ED}",
+    "Language": "SFX",
+    "Hash": "{768451AE-6F21-D968-9B56-F3F7F51D6B37}",
+    "ObjectPath": "WindmillCreak",
+    "ShortName": "WindmillCreak",
+    "Path": "Event/WindmillCreak.bnk",
+    "Media": [
+     {
+      "Id": "336165340",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Windmill_Creak.wav",
+      "Path": "Media/336165340.wem",
+      "CachePath": "3C/{3C2CD5DC-8546-5398-C3EA-692A62D705A0}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1275167351",
+      "Name": "WindmillCreak",
+      "ObjectPath": "\\Events\\Default Work Unit\\WindmillCreak",
+      "GUID": "{BBE76EAE-0BC5-4EE8-A791-403B9AE301ED}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "336165340"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "1355168291",
+    "Type": "User",
+    "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
+    "Language": "SFX",
+    "Hash": "{89C218AE-9E0B-8562-B379-0ABAC724E516}",
+    "ObjectPath": "Init",
+    "ShortName": "Init",
+    "Path": "Init.bnk",
+    "Plugins": {
+     "AudioDevices": [
+      {
+       "Id": "2317455096",
+       "Name": "No_Output",
+       "ObjectPath": "\\Audio Devices\\Default Work Unit\\No_Output",
+       "GUID": "{EF7A91D1-7756-408E-8127-4ABE5AE49214}",
+       "LibName": "No Output",
+       "LibId": "11862023"
+      },
+      {
+       "Id": "3859886410",
+       "Name": "System",
+       "ObjectPath": "\\Audio Devices\\Default Work Unit\\System",
+       "GUID": "{1FA01CA7-E306-4FD8-86E9-BE324254410C}",
+       "LibName": "System",
+       "LibId": "11403271"
+      }
+     ]
+    },
+    "Busses": [
+     {
+      "Id": "3803692087",
+      "Name": "Master Audio Bus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
+      "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "1340207729",
+      "Name": "Footsteps_Surfaces",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Footsteps_Surfaces",
+      "GUID": "{799F1AB9-280A-4232-9CCB-6F531443F761}",
+      "Switches": [
+       {
+        "Id": "1216965916",
+        "Name": "Stone",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Footsteps_Surfaces\\Stone",
+        "GUID": "{9DD50E9D-3187-42C0-8DE7-C1D72F88E0C3}"
+       },
+       {
+        "Id": "2058049674",
+        "Name": "Wood",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Footsteps_Surfaces\\Wood",
+        "GUID": "{5CD5B643-FB0F-4F4F-A8F8-7B6E78A05BFF}"
+       },
+       {
+        "Id": "3032258722",
+        "Name": "Leafy",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Footsteps_Surfaces\\Leafy",
+        "GUID": "{768B08D0-29E6-4FDE-A624-D5BF93685B50}"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "1417076610",
+    "Type": "Event",
+    "GUID": "{26ED23AA-BE75-4C5A-ABAE-F62AFF4393F3}",
+    "Language": "SFX",
+    "Hash": "{296EAF8F-21AA-FE35-7A1F-E42FC272171B}",
+    "ObjectPath": "RustlingLeaf_Ambience",
+    "ShortName": "RustlingLeaf_Ambience",
+    "Path": "Event/RustlingLeaf_Ambience.bnk",
+    "Media": [
+     {
+      "Id": "1024108576",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Rustling_Leaf_Ambience.wav",
+      "Path": "Media/1024108576.wem",
+      "CachePath": "90/{90AC9702-B8C2-650F-9964-8CDC96511F42}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1417076610",
+      "Name": "RustlingLeaf_Ambience",
+      "ObjectPath": "\\Events\\Default Work Unit\\RustlingLeaf_Ambience",
+      "GUID": "{26ED23AA-BE75-4C5A-ABAE-F62AFF4393F3}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "1024108576"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "1671308341",
+    "Type": "Event",
+    "GUID": "{C8088AF2-8E5D-4862-90A9-7224FECBD32C}",
+    "Language": "SFX",
+    "Hash": "{39D2F465-0C9E-2464-6512-B5F6808DC4EE}",
+    "ObjectPath": "MainMenuLoop",
+    "ShortName": "MainMenuLoop",
+    "Path": "Event/MainMenuLoop.bnk",
+    "Media": [
+     {
+      "Id": "846831645",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Countryside Day Loop B.wav",
+      "Path": "Media/846831645.wem",
+      "CachePath": "59/{59FDB94F-9C24-0F85-BA69-AD393E26E638}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1671308341",
+      "Name": "MainMenuLoop",
+      "ObjectPath": "\\Events\\Default Work Unit\\MainMenuLoop",
+      "GUID": "{C8088AF2-8E5D-4862-90A9-7224FECBD32C}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "846831645"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "1956097293",
+    "Type": "Event",
+    "GUID": "{49797858-4CD2-414E-829E-CF2A6974C8C1}",
+    "Language": "SFX",
+    "Hash": "{AEC57598-E0C4-FCFC-A69E-8972C18E17EC}",
+    "ObjectPath": "EndComicLoopStop",
+    "ShortName": "EndComicLoopStop",
+    "Path": "Event/EndComicLoopStop.bnk",
+    "Events": [
+     {
+      "Id": "1956097293",
+      "Name": "EndComicLoopStop",
+      "ObjectPath": "\\Events\\Default Work Unit\\EndComicLoopStop",
+      "GUID": "{49797858-4CD2-414E-829E-CF2A6974C8C1}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   },
+   {
+    "Id": "2174924519",
+    "Type": "Event",
+    "GUID": "{82B30FFF-075F-4D34-9E86-84A2F66907F8}",
+    "Language": "SFX",
+    "Hash": "{01A61E29-F1C8-829D-F6F6-A9E5ACEFBF0E}",
+    "ObjectPath": "EndComicLoopStart",
+    "ShortName": "EndComicLoopStart",
+    "Path": "Event/EndComicLoopStart.bnk",
+    "Media": [
+     {
+      "Id": "577738924",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Ambient Vol4 Niagara Main.wav",
+      "Path": "Media/577738924.wem",
+      "CachePath": "32/{32D97FE6-F86F-C61A-F6B8-0AEDB69DADF9}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2174924519",
+      "Name": "EndComicLoopStart",
+      "ObjectPath": "\\Events\\Default Work Unit\\EndComicLoopStart",
+      "GUID": "{82B30FFF-075F-4D34-9E86-84A2F66907F8}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "577738924"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "2394582229",
+    "Type": "Event",
+    "GUID": "{92348F02-B23A-473C-A006-C44930481FDE}",
+    "Language": "SFX",
+    "Hash": "{76B84132-CA6C-594C-2959-908CFE0773A4}",
+    "ObjectPath": "Player_Dash",
+    "ShortName": "Player_Dash",
+    "Path": "Event/Player_Dash.bnk",
+    "Media": [
+     {
+      "Id": "86141649",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Player_Dash_3.wav",
+      "Path": "Media/86141649.wem",
+      "CachePath": "88/{881367BD-6D13-1764-DBBB-DD691FE71E3A}.wem"
+     },
+     {
+      "Id": "653290861",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Player_Dash_2.wav",
+      "Path": "Media/653290861.wem",
+      "CachePath": "20/{2072DF9C-6F9F-04B1-2F02-E1B4C03BFFE3}.wem"
+     },
+     {
+      "Id": "702094491",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Player_Dash_1.wav",
+      "Path": "Media/702094491.wem",
+      "CachePath": "0C/{0CD4947D-DC4D-D1ED-E486-41A5D856DFCA}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2394582229",
+      "Name": "Player_Dash",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player_Dash",
+      "GUID": "{92348F02-B23A-473C-A006-C44930481FDE}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.7600833",
+      "DurationMax": "0.9993542",
+      "MediaRefs": [
+       {
+        "Id": "86141649"
+       },
+       {
+        "Id": "653290861"
+       },
+       {
+        "Id": "702094491"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "2495255776",
+    "Type": "Event",
+    "GUID": "{6DD29BD4-B3C6-4944-87AA-DED21808CBA5}",
+    "Language": "SFX",
+    "Hash": "{03C9DFA2-FF1E-297D-14BD-AE38F372D0AC}",
+    "ObjectPath": "StopTorchCrackle",
+    "ShortName": "StopTorchCrackle",
+    "Path": "Event/StopTorchCrackle.bnk",
+    "Events": [
+     {
+      "Id": "2495255776",
+      "Name": "StopTorchCrackle",
+      "ObjectPath": "\\Events\\Default Work Unit\\StopTorchCrackle",
+      "GUID": "{6DD29BD4-B3C6-4944-87AA-DED21808CBA5}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   },
+   {
+    "Id": "2536509721",
+    "Type": "Event",
+    "GUID": "{C9A48A90-97A5-4569-B58A-1B1B68880B6A}",
+    "Language": "SFX",
+    "Hash": "{01313EDA-1FA7-61A3-DDD8-B6D66E467FA3}",
+    "ObjectPath": "PageTurn",
+    "ShortName": "PageTurn",
+    "Path": "Event/PageTurn.bnk",
+    "Media": [
+     {
+      "Id": "780559778",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Page_Turn.wav",
+      "Path": "Media/780559778.wem",
+      "CachePath": "8F/{8F4E62FB-CA55-FD25-6B46-B0BF394DF111}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2536509721",
+      "Name": "PageTurn",
+      "ObjectPath": "\\Events\\Default Work Unit\\PageTurn",
+      "GUID": "{C9A48A90-97A5-4569-B58A-1B1B68880B6A}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.30776164",
+      "DurationMax": "0.36599234",
+      "MediaRefs": [
+       {
+        "Id": "780559778"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "2625026092",
+    "Type": "Event",
+    "GUID": "{1F2DA119-A2C1-4D4B-84F1-0EBBF5E97679}",
+    "Language": "SFX",
+    "Hash": "{8E9DB0B9-AF6F-3913-007A-2B476087775C}",
+    "ObjectPath": "Player_Slash",
+    "ShortName": "Player_Slash",
+    "Path": "Event/Player_Slash.bnk",
+    "Media": [
+     {
+      "Id": "590687599",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Player_Slash_1.wav",
+      "Path": "Media/590687599.wem",
+      "CachePath": "22/{228221AA-755F-AE8C-798F-1EE6A87CC0AB}.wem"
+     },
+     {
+      "Id": "610651852",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Player_Slash_2.wav",
+      "Path": "Media/610651852.wem",
+      "CachePath": "3A/{3A7925AD-3B23-33A4-37B8-BCDF0CC1FE0C}.wem"
+     },
+     {
+      "Id": "688049626",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Player_Slash_3.wav",
+      "Path": "Media/688049626.wem",
+      "CachePath": "FF/{FF9D3B5A-4973-2408-1CFB-62774C79A3DD}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2625026092",
+      "Name": "Player_Slash",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player_Slash",
+      "GUID": "{1F2DA119-A2C1-4D4B-84F1-0EBBF5E97679}",
+      "DurationType": "OneShot",
+      "DurationMin": "1",
+      "DurationMax": "1.0125208",
+      "MediaRefs": [
+       {
+        "Id": "590687599"
+       },
+       {
+        "Id": "610651852"
+       },
+       {
+        "Id": "688049626"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "2651676399",
+    "Type": "Event",
+    "GUID": "{A7926B2B-F1C8-4A1A-AC05-A3AFF2059355}",
+    "Language": "SFX",
+    "Hash": "{7F6AC5FC-4D56-9121-3408-AFC8E57F7E69}",
+    "ObjectPath": "EpilogueOSTStart",
+    "ShortName": "EpilogueOSTStart",
+    "Path": "Event/EpilogueOSTStart.bnk",
+    "Media": [
+     {
+      "Id": "671075147",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Countryside Day Loop A.wav",
+      "Path": "Media/671075147.wem",
+      "CachePath": "A3/{A3EF237E-93CD-18C6-6ED3-CF10DB0E5AE0}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2651676399",
+      "Name": "EpilogueOSTStart",
+      "ObjectPath": "\\Events\\Default Work Unit\\EpilogueOSTStart",
+      "GUID": "{A7926B2B-F1C8-4A1A-AC05-A3AFF2059355}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "671075147"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "2687669193",
+    "Type": "Event",
+    "GUID": "{9D505A03-1496-421F-8831-0EDC5D455955}",
+    "Language": "SFX",
+    "Hash": "{A9952BB3-3790-C1BE-F84E-8CA9AED8734E}",
+    "ObjectPath": "StopDash",
+    "ShortName": "StopDash",
+    "Path": "Event/StopDash.bnk",
+    "Events": [
+     {
+      "Id": "2687669193",
+      "Name": "StopDash",
+      "ObjectPath": "\\Events\\Default Work Unit\\StopDash",
+      "GUID": "{9D505A03-1496-421F-8831-0EDC5D455955}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   },
+   {
+    "Id": "2715424361",
+    "Type": "Event",
+    "GUID": "{8BDE453C-BB32-449F-BF50-2721A027A1AE}",
+    "Language": "SFX",
+    "Hash": "{E77B18D6-418A-99B2-AFFA-77C3E7A3DD31}",
+    "ObjectPath": "FarmOST",
+    "ShortName": "FarmOST",
+    "Path": "Event/FarmOST.bnk",
+    "Media": [
+     {
+      "Id": "545987374",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "LemonadeF5maj.wav",
+      "Path": "Media/545987374.wem",
+      "CachePath": "59/{5934E55F-8939-F907-ECAC-8EED1DF604E1}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2715424361",
+      "Name": "FarmOST",
+      "ObjectPath": "\\Events\\Default Work Unit\\FarmOST",
+      "GUID": "{8BDE453C-BB32-449F-BF50-2721A027A1AE}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "545987374"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "2897553034",
+    "Type": "Event",
+    "GUID": "{2B8BC3B4-AC44-4AD1-88D9-D8489ED1883D}",
+    "Language": "SFX",
+    "Hash": "{298F1BC3-9D38-69EA-23CF-E14A9E7812D1}",
+    "ObjectPath": "TowerOST",
+    "ShortName": "TowerOST",
+    "Path": "Event/TowerOST.bnk",
+    "Media": [
+     {
+      "Id": "694905578",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "minorlemonade1p.wav",
+      "Path": "Media/694905578.wem",
+      "CachePath": "0E/{0E78A787-241B-0556-2A69-8F68F27394AC}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2897553034",
+      "Name": "TowerOST",
+      "ObjectPath": "\\Events\\Default Work Unit\\TowerOST",
+      "GUID": "{2B8BC3B4-AC44-4AD1-88D9-D8489ED1883D}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "694905578"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "3065686491",
+    "Type": "Event",
+    "GUID": "{3989F2C1-9CCB-49F5-ADDD-13D914568D7B}",
+    "Language": "SFX",
+    "Hash": "{537798C3-ABF5-9376-F23F-4F6A9B5F3CD5}",
+    "ObjectPath": "HealthPickUp",
+    "ShortName": "HealthPickUp",
+    "Path": "Event/HealthPickUp.bnk",
+    "Media": [
+     {
+      "Id": "578162784",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Health_PU_Pop.wav",
+      "Path": "Media/578162784.wem",
+      "CachePath": "2F/{2F52E2DA-FBA8-99AF-89D7-D13C6FD55C2C}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3065686491",
+      "Name": "HealthPickUp",
+      "ObjectPath": "\\Events\\Default Work Unit\\HealthPickUp",
+      "GUID": "{3989F2C1-9CCB-49F5-ADDD-13D914568D7B}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.034829933",
+      "DurationMax": "0.034829933",
+      "MediaRefs": [
+       {
+        "Id": "578162784"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "3454543542",
+    "Type": "Event",
+    "GUID": "{1D62AB81-95D8-4302-9725-51E2CDC9777E}",
+    "Language": "SFX",
+    "Hash": "{3C5C6875-13CC-6990-2A70-34DA7B2010E0}",
+    "ObjectPath": "MuralHumStart",
+    "ShortName": "MuralHumStart",
+    "Path": "Event/MuralHumStart.bnk",
+    "Media": [
+     {
+      "Id": "649666867",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Mural_Hum.wav",
+      "Path": "Media/649666867.wem",
+      "CachePath": "4A/{4A757DFA-03A4-9AD4-854C-F8CC1BECC074}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3454543542",
+      "Name": "MuralHumStart",
+      "ObjectPath": "\\Events\\Default Work Unit\\MuralHumStart",
+      "GUID": "{1D62AB81-95D8-4302-9725-51E2CDC9777E}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "649666867"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "3810440263",
+    "Type": "Event",
+    "GUID": "{12A81DEA-CB5B-4F53-A6C1-0E5B27922759}",
+    "Language": "SFX",
+    "Hash": "{C5D248AC-5AFB-8EB7-67F6-4280B7A74A1E}",
+    "ObjectPath": "ShrineJingle",
+    "ShortName": "ShrineJingle",
+    "Path": "Event/ShrineJingle.bnk",
+    "Media": [
+     {
+      "Id": "385363137",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Shrine_Interact_SFX.wav",
+      "Path": "Media/385363137.wem",
+      "CachePath": "D6/{D6D7C189-22F6-2709-295D-F948B3B529AF}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3810440263",
+      "Name": "ShrineJingle",
+      "ObjectPath": "\\Events\\Default Work Unit\\ShrineJingle",
+      "GUID": "{12A81DEA-CB5B-4F53-A6C1-0E5B27922759}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.9965754",
+      "DurationMax": "3.9965754",
+      "MediaRefs": [
+       {
+        "Id": "385363137"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "4010383720",
+    "Type": "Event",
+    "GUID": "{4C6EC277-D395-4CBB-AEED-D0EC73BDAA9C}",
+    "Language": "SFX",
+    "Hash": "{35852FCD-D087-1F7D-DA9A-494978A52738}",
+    "ObjectPath": "TorchCrackle",
+    "ShortName": "TorchCrackle",
+    "Path": "Event/TorchCrackle.bnk",
+    "Media": [
+     {
+      "Id": "599581680",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Torch_SFX_MK2.wav",
+      "Path": "Media/599581680.wem",
+      "CachePath": "20/{2094D3C2-F3DC-81FB-DE6A-FAB31D82DBFC}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4010383720",
+      "Name": "TorchCrackle",
+      "ObjectPath": "\\Events\\Default Work Unit\\TorchCrackle",
+      "GUID": "{4C6EC277-D395-4CBB-AEED-D0EC73BDAA9C}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "599581680"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "4135840477",
+    "Type": "Event",
+    "GUID": "{99F1243E-3F4A-4A7A-B8AF-88E7251C575D}",
+    "Language": "SFX",
+    "Hash": "{E18C7B25-36FD-EB45-58C5-3D220FDF479E}",
+    "ObjectPath": "ChainClinking",
+    "ShortName": "ChainClinking",
+    "Path": "Event/ChainClinking.bnk",
+    "Media": [
+     {
+      "Id": "172754056",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Chains_2.wav",
+      "Path": "Media/172754056.wem",
+      "CachePath": "A9/{A9AD2934-A62E-9D74-AA97-3C1B9C4D329B}.wem"
+     },
+     {
+      "Id": "650904613",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Chains_3.wav",
+      "Path": "Media/650904613.wem",
+      "CachePath": "A8/{A884FD9D-86E2-268E-3D3B-481E9B660ED8}.wem"
+     },
+     {
+      "Id": "727582795",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Chains_1.wav",
+      "Path": "Media/727582795.wem",
+      "CachePath": "EC/{EC6F20BF-F7BC-1286-876C-908F4FEDD426}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4135840477",
+      "Name": "ChainClinking",
+      "ObjectPath": "\\Events\\Default Work Unit\\ChainClinking",
+      "GUID": "{99F1243E-3F4A-4A7A-B8AF-88E7251C575D}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.81",
+      "DurationMax": "2.5444167",
+      "MediaRefs": [
+       {
+        "Id": "172754056"
+       },
+       {
+        "Id": "650904613"
+       },
+       {
+        "Id": "727582795"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "4205670645",
+    "Type": "Event",
+    "GUID": "{5A4FBF45-90DF-4090-BEDF-037C99BB056D}",
+    "Language": "SFX",
+    "Hash": "{B53B0450-2543-EE51-4DF2-B1C2433B566B}",
+    "ObjectPath": "EpilogueOSTStop",
+    "ShortName": "EpilogueOSTStop",
+    "Path": "Event/EpilogueOSTStop.bnk",
+    "Events": [
+     {
+      "Id": "4205670645",
+      "Name": "EpilogueOSTStop",
+      "ObjectPath": "\\Events\\Default Work Unit\\EpilogueOSTStop",
+      "GUID": "{5A4FBF45-90DF-4090-BEDF-037C99BB056D}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{412C825B-4997-9BB4-739B-32D12D3D27D5}"
+ }
+}

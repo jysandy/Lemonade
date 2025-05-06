@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2625026092	Player_Slash			\Default Work Unit\Player_Slash	
+

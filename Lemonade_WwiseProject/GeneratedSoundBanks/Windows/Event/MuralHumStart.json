@@ -1,0 +1,46 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3454543542",
+    "Type": "Event",
+    "GUID": "{1D62AB81-95D8-4302-9725-51E2CDC9777E}",
+    "Language": "SFX",
+    "Hash": "{3C5C6875-13CC-6990-2A70-34DA7B2010E0}",
+    "ObjectPath": "MuralHumStart",
+    "ShortName": "MuralHumStart",
+    "Path": "Event/MuralHumStart.bnk",
+    "Media": [
+     {
+      "Id": "649666867",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Mural_Hum.wav",
+      "Path": "Media/649666867.wem",
+      "CachePath": "4A/{4A757DFA-03A4-9AD4-854C-F8CC1BECC074}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3454543542",
+      "Name": "MuralHumStart",
+      "ObjectPath": "\\Events\\Default Work Unit\\MuralHumStart",
+      "GUID": "{1D62AB81-95D8-4302-9725-51E2CDC9777E}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "649666867"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{DF66234F-45A3-8F6B-2968-4029D162D290}"
+ }
+}

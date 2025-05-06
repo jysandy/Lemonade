@@ -1,0 +1,46 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2897553034",
+    "Type": "Event",
+    "GUID": "{2B8BC3B4-AC44-4AD1-88D9-D8489ED1883D}",
+    "Language": "SFX",
+    "Hash": "{298F1BC3-9D38-69EA-23CF-E14A9E7812D1}",
+    "ObjectPath": "TowerOST",
+    "ShortName": "TowerOST",
+    "Path": "Event/TowerOST.bnk",
+    "Media": [
+     {
+      "Id": "694905578",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "minorlemonade1p.wav",
+      "Path": "Media/694905578.wem",
+      "CachePath": "0E/{0E78A787-241B-0556-2A69-8F68F27394AC}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2897553034",
+      "Name": "TowerOST",
+      "ObjectPath": "\\Events\\Default Work Unit\\TowerOST",
+      "GUID": "{2B8BC3B4-AC44-4AD1-88D9-D8489ED1883D}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "694905578"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{8E96DC6A-5A44-B7A5-F82E-06738826EA68}"
+ }
+}

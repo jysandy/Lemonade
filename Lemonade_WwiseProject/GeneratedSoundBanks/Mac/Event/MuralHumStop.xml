@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="154">
+	<SoundBanks>
+		<SoundBank Id="336785206" Type="Event" GUID="{95718943-E0EC-40D4-A6C2-3D5947AF4994}" Language="SFX" Hash="{C7EA8CEF-54A1-639E-41BC-3434A3F553B7}">
+			<ObjectPath>MuralHumStop</ObjectPath>
+			<ShortName>MuralHumStop</ShortName>
+			<Path>Event/MuralHumStop.bnk</Path>
+			<Events>
+				<Event Id="336785206" Name="MuralHumStop" ObjectPath="\Events\Default Work Unit\MuralHumStop" GUID="{95718943-E0EC-40D4-A6C2-3D5947AF4994}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{CEBF763B-A3AF-5241-E447-874F5344AFD4}</FileHash>
+</SoundBanksInfo>

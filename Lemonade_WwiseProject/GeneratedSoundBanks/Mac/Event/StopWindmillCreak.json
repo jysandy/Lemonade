@@ -1,0 +1,33 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "223216111",
+    "Type": "Event",
+    "GUID": "{ED76017F-3C1B-4B7B-ADB4-E723ADA73382}",
+    "Language": "SFX",
+    "Hash": "{11551F20-6F08-3117-93C6-3077671533C0}",
+    "ObjectPath": "StopWindmillCreak",
+    "ShortName": "StopWindmillCreak",
+    "Path": "Event/StopWindmillCreak.bnk",
+    "Events": [
+     {
+      "Id": "223216111",
+      "Name": "StopWindmillCreak",
+      "ObjectPath": "\\Events\\Default Work Unit\\StopWindmillCreak",
+      "GUID": "{ED76017F-3C1B-4B7B-ADB4-E723ADA73382}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{1FD2CFD8-4C07-A4E5-228C-104101CC99F4}"
+ }
+}

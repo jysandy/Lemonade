@@ -1,0 +1,33 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2687669193",
+    "Type": "Event",
+    "GUID": "{9D505A03-1496-421F-8831-0EDC5D455955}",
+    "Language": "SFX",
+    "Hash": "{A9952BB3-3790-C1BE-F84E-8CA9AED8734E}",
+    "ObjectPath": "StopDash",
+    "ShortName": "StopDash",
+    "Path": "Event/StopDash.bnk",
+    "Events": [
+     {
+      "Id": "2687669193",
+      "Name": "StopDash",
+      "ObjectPath": "\\Events\\Default Work Unit\\StopDash",
+      "GUID": "{9D505A03-1496-421F-8831-0EDC5D455955}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{D26EA6C5-84BF-5E6C-1052-B2E59432D3A0}"
+ }
+}

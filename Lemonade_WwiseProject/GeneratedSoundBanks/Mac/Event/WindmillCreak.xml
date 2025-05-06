@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="154">
+	<SoundBanks>
+		<SoundBank Id="1275167351" Type="Event" GUID="{BBE76EAE-0BC5-4EE8-A791-403B9AE301ED}" Language="SFX" Hash="{768451AE-6F21-D968-9B56-F3F7F51D6B37}">
+			<ObjectPath>WindmillCreak</ObjectPath>
+			<ShortName>WindmillCreak</ShortName>
+			<Path>Event/WindmillCreak.bnk</Path>
+			<Media>
+				<File Id="336165340" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Windmill_Creak.wav</ShortName>
+					<Path>Media/336165340.wem</Path>
+					<CachePath>3C/{3C2CD5DC-8546-5398-C3EA-692A62D705A0}.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1275167351" Name="WindmillCreak" ObjectPath="\Events\Default Work Unit\WindmillCreak" GUID="{BBE76EAE-0BC5-4EE8-A791-403B9AE301ED}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="336165340"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{77D2DC90-33D0-CEC1-5525-F4B2C109B354}</FileHash>
+</SoundBanksInfo>

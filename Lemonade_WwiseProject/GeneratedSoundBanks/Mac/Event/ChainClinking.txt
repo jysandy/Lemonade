@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	4135840477	ChainClinking			\Default Work Unit\ChainClinking	
+

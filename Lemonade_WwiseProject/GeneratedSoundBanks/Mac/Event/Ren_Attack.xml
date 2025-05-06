@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="154">
+	<SoundBanks>
+		<SoundBank Id="363320255" Type="Event" GUID="{7978CF86-E4CA-45F3-8A09-10D7259F8326}" Language="SFX" Hash="{D0D1D706-944A-21FC-DD8C-24F943F51942}">
+			<ObjectPath>Ren_Attack</ObjectPath>
+			<ShortName>Ren_Attack</ShortName>
+			<Path>Event/Ren_Attack.bnk</Path>
+			<Media>
+				<File Id="62030602" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Ren_Attack_1.wav</ShortName>
+					<Path>Media/62030602.wem</Path>
+					<CachePath>07/{0756B4AF-3F7D-50F1-13F2-B5EEF3FAA911}.wem</CachePath>
+				</File>
+				<File Id="586278153" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Ren_Attack_3.wav</ShortName>
+					<Path>Media/586278153.wem</Path>
+					<CachePath>7C/{7C57127E-0F9B-C5B7-DEE1-55B51185E93B}.wem</CachePath>
+				</File>
+				<File Id="739775337" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Ren_Attack_2.wav</ShortName>
+					<Path>Media/739775337.wem</Path>
+					<CachePath>43/{43019BD8-BFA2-C921-F2E3-DD493BB649D9}.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="363320255" Name="Ren_Attack" ObjectPath="\Events\Default Work Unit\Ren_Attack" GUID="{7978CF86-E4CA-45F3-8A09-10D7259F8326}" DurationType="OneShot" DurationMin="0.66154164" DurationMax="0.6756667">
+					<MediaRefs>
+						<MediaRef Id="62030602"/>
+						<MediaRef Id="586278153"/>
+						<MediaRef Id="739775337"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{3DD59FB1-F02E-3C3D-1607-0924552B899B}</FileHash>
+</SoundBanksInfo>

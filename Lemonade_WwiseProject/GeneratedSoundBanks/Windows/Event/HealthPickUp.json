@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3065686491",
+    "Type": "Event",
+    "GUID": "{3989F2C1-9CCB-49F5-ADDD-13D914568D7B}",
+    "Language": "SFX",
+    "Hash": "{537798C3-ABF5-9376-F23F-4F6A9B5F3CD5}",
+    "ObjectPath": "HealthPickUp",
+    "ShortName": "HealthPickUp",
+    "Path": "Event/HealthPickUp.bnk",
+    "Media": [
+     {
+      "Id": "578162784",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Health_PU_Pop.wav",
+      "Path": "Media/578162784.wem",
+      "CachePath": "2F/{2F52E2DA-FBA8-99AF-89D7-D13C6FD55C2C}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3065686491",
+      "Name": "HealthPickUp",
+      "ObjectPath": "\\Events\\Default Work Unit\\HealthPickUp",
+      "GUID": "{3989F2C1-9CCB-49F5-ADDD-13D914568D7B}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.034829933",
+      "DurationMax": "0.034829933",
+      "MediaRefs": [
+       {
+        "Id": "578162784"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{3AE70432-F716-0B20-C2B4-561E4E770D74}"
+ }
+}

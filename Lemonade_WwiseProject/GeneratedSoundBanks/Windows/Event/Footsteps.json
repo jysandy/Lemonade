@@ -1,0 +1,263 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2385628198",
+    "Type": "Event",
+    "GUID": "{1BF908CF-9F52-41C4-8386-180D92CC90FA}",
+    "Language": "SFX",
+    "Hash": "{3D52389E-0787-5C1A-FDE4-D9E77BF0252A}",
+    "ObjectPath": "Footsteps",
+    "ShortName": "Footsteps",
+    "Path": "Event/Footsteps.bnk",
+    "Media": [
+     {
+      "Id": "134441412",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Wood_Footstep_1.wav",
+      "Path": "Media/134441412.wem",
+      "CachePath": "00/{00000000-0000-0000-0000-000000000000}.wem"
+     },
+     {
+      "Id": "152561508",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Leafy_Footstep_2.wav",
+      "Path": "Media/152561508.wem",
+      "CachePath": "00/{00000000-0000-0000-0000-000000000000}.wem"
+     },
+     {
+      "Id": "306134501",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stone_Footstep_3.wav",
+      "Path": "Media/306134501.wem",
+      "CachePath": "00/{00000000-0000-0000-0000-000000000000}.wem"
+     },
+     {
+      "Id": "312233278",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stone_Footstep_2.wav",
+      "Path": "Media/312233278.wem",
+      "CachePath": "00/{00000000-0000-0000-0000-000000000000}.wem"
+     },
+     {
+      "Id": "331933879",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Leafy_Footstep_1.wav",
+      "Path": "Media/331933879.wem",
+      "CachePath": "00/{00000000-0000-0000-0000-000000000000}.wem"
+     },
+     {
+      "Id": "404822791",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Wood_Footstep_5.wav",
+      "Path": "Media/404822791.wem",
+      "CachePath": "00/{00000000-0000-0000-0000-000000000000}.wem"
+     },
+     {
+      "Id": "449627301",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Leafy_Footstep_5.wav",
+      "Path": "Media/449627301.wem",
+      "CachePath": "00/{00000000-0000-0000-0000-000000000000}.wem"
+     },
+     {
+      "Id": "700645356",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Wood_Footstep_4.wav",
+      "Path": "Media/700645356.wem",
+      "CachePath": "00/{00000000-0000-0000-0000-000000000000}.wem"
+     },
+     {
+      "Id": "851568479",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Wood_Footstep_3.wav",
+      "Path": "Media/851568479.wem",
+      "CachePath": "00/{00000000-0000-0000-0000-000000000000}.wem"
+     },
+     {
+      "Id": "918872046",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Wood_Footstep_2.wav",
+      "Path": "Media/918872046.wem",
+      "CachePath": "00/{00000000-0000-0000-0000-000000000000}.wem"
+     },
+     {
+      "Id": "922995584",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Leafy_Footstep_3.wav",
+      "Path": "Media/922995584.wem",
+      "CachePath": "00/{00000000-0000-0000-0000-000000000000}.wem"
+     },
+     {
+      "Id": "940076832",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stone_Footstep_1.wav",
+      "Path": "Media/940076832.wem",
+      "CachePath": "00/{00000000-0000-0000-0000-000000000000}.wem"
+     },
+     {
+      "Id": "947619485",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stone_Footstep_5.wav",
+      "Path": "Media/947619485.wem",
+      "CachePath": "00/{00000000-0000-0000-0000-000000000000}.wem"
+     },
+     {
+      "Id": "1043082682",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stone_Footstep_4.wav",
+      "Path": "Media/1043082682.wem",
+      "CachePath": "00/{00000000-0000-0000-0000-000000000000}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2385628198",
+      "Name": "Footsteps",
+      "ObjectPath": "\\Events\\Default Work Unit\\Footsteps",
+      "GUID": "{1BF908CF-9F52-41C4-8386-180D92CC90FA}",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1340207729",
+         "Id": "2058049674",
+         "GUID": "{5CD5B643-FB0F-4F4F-A8F8-7B6E78A05BFF}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "134441412"
+         },
+         {
+          "Id": "404822791"
+         },
+         {
+          "Id": "700645356"
+         },
+         {
+          "Id": "851568479"
+         },
+         {
+          "Id": "918872046"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1340207729",
+         "Id": "1216965916",
+         "GUID": "{9DD50E9D-3187-42C0-8DE7-C1D72F88E0C3}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "306134501"
+         },
+         {
+          "Id": "312233278"
+         },
+         {
+          "Id": "940076832"
+         },
+         {
+          "Id": "947619485"
+         },
+         {
+          "Id": "1043082682"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1340207729",
+         "Id": "3032258722",
+         "GUID": "{768B08D0-29E6-4FDE-A624-D5BF93685B50}",
+         "Default": "true"
+        },
+        "MediaRefs": [
+         {
+          "Id": "152561508"
+         },
+         {
+          "Id": "331933879"
+         },
+         {
+          "Id": "449627301"
+         },
+         {
+          "Id": "922995584"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "1340207729",
+      "Name": "Footsteps_Surfaces",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Footsteps_Surfaces",
+      "GUID": "{799F1AB9-280A-4232-9CCB-6F531443F761}",
+      "Switches": [
+       {
+        "Id": "1216965916",
+        "Name": "Stone",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Footsteps_Surfaces\\Stone",
+        "GUID": "{9DD50E9D-3187-42C0-8DE7-C1D72F88E0C3}"
+       },
+       {
+        "Id": "2058049674",
+        "Name": "Wood",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Footsteps_Surfaces\\Wood",
+        "GUID": "{5CD5B643-FB0F-4F4F-A8F8-7B6E78A05BFF}"
+       },
+       {
+        "Id": "3032258722",
+        "Name": "Leafy",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Footsteps_Surfaces\\Leafy",
+        "GUID": "{768B08D0-29E6-4FDE-A624-D5BF93685B50}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{4D69509D-2D38-B954-E76B-09FBAD28F3D0}"
+ }
+}

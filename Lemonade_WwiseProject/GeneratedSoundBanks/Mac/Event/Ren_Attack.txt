@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	363320255	Ren_Attack			\Default Work Unit\Ren_Attack	
+

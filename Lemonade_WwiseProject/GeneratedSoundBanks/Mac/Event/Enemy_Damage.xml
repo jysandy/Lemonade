@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="154">
+	<SoundBanks>
+		<SoundBank Id="555067025" Type="Event" GUID="{77E1D464-2D33-46B1-A2AD-5D2F60E8A473}" Language="SFX" Hash="{696D5D55-67C0-B3ED-604B-2C15AF96FB85}">
+			<ObjectPath>Enemy_Damage</ObjectPath>
+			<ShortName>Enemy_Damage</ShortName>
+			<Path>Event/Enemy_Damage.bnk</Path>
+			<Media>
+				<File Id="14441101" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Enemy_Damage_2.wav</ShortName>
+					<Path>Media/14441101.wem</Path>
+					<CachePath>F7/{F7AB3363-BEEB-9292-221B-E1674918E064}.wem</CachePath>
+				</File>
+				<File Id="187331942" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Enemy_Damage_1.wav</ShortName>
+					<Path>Media/187331942.wem</Path>
+					<CachePath>F2/{F2564204-0855-0F27-380E-C777B6D7760C}.wem</CachePath>
+				</File>
+				<File Id="496540989" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Enemy_Damage_4.wav</ShortName>
+					<Path>Media/496540989.wem</Path>
+					<CachePath>84/{845BBA2B-BA6C-49A7-E390-D399235768EA}.wem</CachePath>
+				</File>
+				<File Id="541262259" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Enemy_Damage_5.wav</ShortName>
+					<Path>Media/541262259.wem</Path>
+					<CachePath>BB/{BB5ACD89-2F84-E4D6-E7D0-59AB8E19BE4D}.wem</CachePath>
+				</File>
+				<File Id="704059429" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Enemy_Damage_6.wav</ShortName>
+					<Path>Media/704059429.wem</Path>
+					<CachePath>E2/{E278F0B1-E07A-3E91-4E2B-F003D6A814D0}.wem</CachePath>
+				</File>
+				<File Id="903866788" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Enemy_Damage_3.wav</ShortName>
+					<Path>Media/903866788.wem</Path>
+					<CachePath>84/{844E0856-7940-1F51-528C-B0A2991D3635}.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="555067025" Name="Enemy_Damage" ObjectPath="\Events\Default Work Unit\Enemy_Damage" GUID="{77E1D464-2D33-46B1-A2AD-5D2F60E8A473}" DurationType="OneShot" DurationMin="0.16154195" DurationMax="1.0608844">
+					<MediaRefs>
+						<MediaRef Id="14441101"/>
+						<MediaRef Id="187331942"/>
+						<MediaRef Id="496540989"/>
+						<MediaRef Id="541262259"/>
+						<MediaRef Id="704059429"/>
+						<MediaRef Id="903866788"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{68E7409F-A520-1277-9D57-09A712473F1F}</FileHash>
+</SoundBanksInfo>

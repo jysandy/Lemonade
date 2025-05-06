@@ -1,0 +1,33 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "336785206",
+    "Type": "Event",
+    "GUID": "{95718943-E0EC-40D4-A6C2-3D5947AF4994}",
+    "Language": "SFX",
+    "Hash": "{C7EA8CEF-54A1-639E-41BC-3434A3F553B7}",
+    "ObjectPath": "MuralHumStop",
+    "ShortName": "MuralHumStop",
+    "Path": "Event/MuralHumStop.bnk",
+    "Events": [
+     {
+      "Id": "336785206",
+      "Name": "MuralHumStop",
+      "ObjectPath": "\\Events\\Default Work Unit\\MuralHumStop",
+      "GUID": "{95718943-E0EC-40D4-A6C2-3D5947AF4994}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{F479BA8D-AC48-F6EA-FB24-B15D794CE878}"
+ }
+}

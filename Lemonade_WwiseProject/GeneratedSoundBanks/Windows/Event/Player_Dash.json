@@ -1,0 +1,72 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2394582229",
+    "Type": "Event",
+    "GUID": "{92348F02-B23A-473C-A006-C44930481FDE}",
+    "Language": "SFX",
+    "Hash": "{76B84132-CA6C-594C-2959-908CFE0773A4}",
+    "ObjectPath": "Player_Dash",
+    "ShortName": "Player_Dash",
+    "Path": "Event/Player_Dash.bnk",
+    "Media": [
+     {
+      "Id": "86141649",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Player_Dash_3.wav",
+      "Path": "Media/86141649.wem",
+      "CachePath": "88/{881367BD-6D13-1764-DBBB-DD691FE71E3A}.wem"
+     },
+     {
+      "Id": "653290861",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Player_Dash_2.wav",
+      "Path": "Media/653290861.wem",
+      "CachePath": "20/{2072DF9C-6F9F-04B1-2F02-E1B4C03BFFE3}.wem"
+     },
+     {
+      "Id": "702094491",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Player_Dash_1.wav",
+      "Path": "Media/702094491.wem",
+      "CachePath": "0C/{0CD4947D-DC4D-D1ED-E486-41A5D856DFCA}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2394582229",
+      "Name": "Player_Dash",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player_Dash",
+      "GUID": "{92348F02-B23A-473C-A006-C44930481FDE}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.7600833",
+      "DurationMax": "0.9993542",
+      "MediaRefs": [
+       {
+        "Id": "86141649"
+       },
+       {
+        "Id": "653290861"
+       },
+       {
+        "Id": "702094491"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{298FADBC-8AF8-E6EC-75A2-89DBB44773E2}"
+ }
+}

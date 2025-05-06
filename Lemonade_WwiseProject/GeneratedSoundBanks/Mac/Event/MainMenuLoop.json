@@ -1,0 +1,46 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1671308341",
+    "Type": "Event",
+    "GUID": "{C8088AF2-8E5D-4862-90A9-7224FECBD32C}",
+    "Language": "SFX",
+    "Hash": "{39D2F465-0C9E-2464-6512-B5F6808DC4EE}",
+    "ObjectPath": "MainMenuLoop",
+    "ShortName": "MainMenuLoop",
+    "Path": "Event/MainMenuLoop.bnk",
+    "Media": [
+     {
+      "Id": "846831645",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Countryside Day Loop B.wav",
+      "Path": "Media/846831645.wem",
+      "CachePath": "59/{59FDB94F-9C24-0F85-BA69-AD393E26E638}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1671308341",
+      "Name": "MainMenuLoop",
+      "ObjectPath": "\\Events\\Default Work Unit\\MainMenuLoop",
+      "GUID": "{C8088AF2-8E5D-4862-90A9-7224FECBD32C}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "846831645"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{0B87CDEE-EDB7-0A1B-1C2A-F6D676096E79}"
+ }
+}

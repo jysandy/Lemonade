@@ -1,0 +1,72 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "4135840477",
+    "Type": "Event",
+    "GUID": "{99F1243E-3F4A-4A7A-B8AF-88E7251C575D}",
+    "Language": "SFX",
+    "Hash": "{E18C7B25-36FD-EB45-58C5-3D220FDF479E}",
+    "ObjectPath": "ChainClinking",
+    "ShortName": "ChainClinking",
+    "Path": "Event/ChainClinking.bnk",
+    "Media": [
+     {
+      "Id": "172754056",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Chains_2.wav",
+      "Path": "Media/172754056.wem",
+      "CachePath": "A9/{A9AD2934-A62E-9D74-AA97-3C1B9C4D329B}.wem"
+     },
+     {
+      "Id": "650904613",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Chains_3.wav",
+      "Path": "Media/650904613.wem",
+      "CachePath": "A8/{A884FD9D-86E2-268E-3D3B-481E9B660ED8}.wem"
+     },
+     {
+      "Id": "727582795",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Chains_1.wav",
+      "Path": "Media/727582795.wem",
+      "CachePath": "EC/{EC6F20BF-F7BC-1286-876C-908F4FEDD426}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4135840477",
+      "Name": "ChainClinking",
+      "ObjectPath": "\\Events\\Default Work Unit\\ChainClinking",
+      "GUID": "{99F1243E-3F4A-4A7A-B8AF-88E7251C575D}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.81",
+      "DurationMax": "2.5444167",
+      "MediaRefs": [
+       {
+        "Id": "172754056"
+       },
+       {
+        "Id": "650904613"
+       },
+       {
+        "Id": "727582795"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{26A59EE9-33B4-DC1D-9C88-B28B8712CCCC}"
+ }
+}

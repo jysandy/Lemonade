@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="154">
+	<SoundBanks>
+		<SoundBank Id="1671308341" Type="Event" GUID="{C8088AF2-8E5D-4862-90A9-7224FECBD32C}" Language="SFX" Hash="{39D2F465-0C9E-2464-6512-B5F6808DC4EE}">
+			<ObjectPath>MainMenuLoop</ObjectPath>
+			<ShortName>MainMenuLoop</ShortName>
+			<Path>Event/MainMenuLoop.bnk</Path>
+			<Media>
+				<File Id="846831645" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Countryside Day Loop B.wav</ShortName>
+					<Path>Media/846831645.wem</Path>
+					<CachePath>59/{59FDB94F-9C24-0F85-BA69-AD393E26E638}.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1671308341" Name="MainMenuLoop" ObjectPath="\Events\Default Work Unit\MainMenuLoop" GUID="{C8088AF2-8E5D-4862-90A9-7224FECBD32C}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="846831645"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{75E18E7E-D05E-10B4-75CF-B88EE9B1E73A}</FileHash>
+</SoundBanksInfo>

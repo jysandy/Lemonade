@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="154">
+	<SoundBanks>
+		<SoundBank Id="3810440263" Type="Event" GUID="{12A81DEA-CB5B-4F53-A6C1-0E5B27922759}" Language="SFX" Hash="{C5D248AC-5AFB-8EB7-67F6-4280B7A74A1E}">
+			<ObjectPath>ShrineJingle</ObjectPath>
+			<ShortName>ShrineJingle</ShortName>
+			<Path>Event/ShrineJingle.bnk</Path>
+			<Media>
+				<File Id="385363137" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Shrine_Interact_SFX.wav</ShortName>
+					<Path>Media/385363137.wem</Path>
+					<CachePath>D6/{D6D7C189-22F6-2709-295D-F948B3B529AF}.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3810440263" Name="ShrineJingle" ObjectPath="\Events\Default Work Unit\ShrineJingle" GUID="{12A81DEA-CB5B-4F53-A6C1-0E5B27922759}" DurationType="OneShot" DurationMin="3.9965754" DurationMax="3.9965754">
+					<MediaRefs>
+						<MediaRef Id="385363137"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{7CD0CACE-45CD-F988-DAA3-DE09716E890F}</FileHash>
+</SoundBanksInfo>

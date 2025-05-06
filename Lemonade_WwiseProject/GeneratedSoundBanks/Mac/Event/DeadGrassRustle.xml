@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="154">
+	<SoundBanks>
+		<SoundBank Id="287583992" Type="Event" GUID="{FFCF8BA9-FF37-4AE1-B536-61D544CE195B}" Language="SFX" Hash="{73D04F31-4B33-A3D3-0EA1-186CA3D0488D}">
+			<ObjectPath>DeadGrassRustle</ObjectPath>
+			<ShortName>DeadGrassRustle</ShortName>
+			<Path>Event/DeadGrassRustle.bnk</Path>
+			<Media>
+				<File Id="80433286" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>DeadGrass_Rustle_1.wav</ShortName>
+					<Path>Media/80433286.wem</Path>
+					<CachePath>7B/{7B1294E6-E1DE-C86A-EB2E-D707837B75F5}.wem</CachePath>
+				</File>
+				<File Id="291366834" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>DeadGrass_Rustle_2.wav</ShortName>
+					<Path>Media/291366834.wem</Path>
+					<CachePath>38/{3819594B-561C-A793-E89F-1FD51C4F3549}.wem</CachePath>
+				</File>
+				<File Id="423525504" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>DeadGrass_Rustle_3.wav</ShortName>
+					<Path>Media/423525504.wem</Path>
+					<CachePath>6F/{6FB821B6-381A-7F61-1BEA-EAFC0BA0C01F}.wem</CachePath>
+				</File>
+				<File Id="756581966" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>DeadGrass_Rustle_4.wav</ShortName>
+					<Path>Media/756581966.wem</Path>
+					<CachePath>70/{702CF32D-26DA-9B56-AA68-9225E94BC98B}.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="287583992" Name="DeadGrassRustle" ObjectPath="\Events\Default Work Unit\DeadGrassRustle" GUID="{FFCF8BA9-FF37-4AE1-B536-61D544CE195B}" DurationType="OneShot" DurationMin="0.9825753" DurationMax="1.4872154">
+					<MediaRefs>
+						<MediaRef Id="80433286"/>
+						<MediaRef Id="291366834"/>
+						<MediaRef Id="423525504"/>
+						<MediaRef Id="756581966"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{26C748D7-1518-E789-5456-56BBF448215B}</FileHash>
+</SoundBanksInfo>

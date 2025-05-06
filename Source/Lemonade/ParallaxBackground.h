@@ -5,7 +5,10 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "PaperSpriteComponent.h"
+#include "SideScrollingCamera.h"
+#include "ParallaxLayerComponent.h"
 #include "ParallaxBackground.generated.h"
+
 
 UCLASS()
 class LEMONADE_API AParallaxBackground : public AActor
@@ -24,36 +27,21 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	UFUNCTION(BlueprintCallable)
+	void ToggleVisibility();
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	UPaperSpriteComponent* StaticBG;
-	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	UPaperSpriteComponent* Layer1;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	UPaperSpriteComponent* Layer2;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	UPaperSpriteComponent* Layer3;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	UPaperSpriteComponent* Layer4;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	UPaperSpriteComponent* Layer5;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	TArray<float> ParallaxSpeeds;
 
 	// The distance of the background from the camera.
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float DistanceFromCamera;
 
 private:
-	UPROPERTY()
-	TArray<UMaterialInstanceDynamic*> LayerMIDs;
-
 	AActor* FindSideScrollingCamera();
+
+	UPROPERTY()
+	ASideScrollingCamera* SideScrollingCamera;
 
 	// The scale factor needed to make the background fit a 
 	// camera vertically.

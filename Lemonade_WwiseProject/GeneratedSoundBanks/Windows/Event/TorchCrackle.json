@@ -1,0 +1,46 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "4010383720",
+    "Type": "Event",
+    "GUID": "{4C6EC277-D395-4CBB-AEED-D0EC73BDAA9C}",
+    "Language": "SFX",
+    "Hash": "{35852FCD-D087-1F7D-DA9A-494978A52738}",
+    "ObjectPath": "TorchCrackle",
+    "ShortName": "TorchCrackle",
+    "Path": "Event/TorchCrackle.bnk",
+    "Media": [
+     {
+      "Id": "599581680",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Torch_SFX_MK2.wav",
+      "Path": "Media/599581680.wem",
+      "CachePath": "20/{2094D3C2-F3DC-81FB-DE6A-FAB31D82DBFC}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4010383720",
+      "Name": "TorchCrackle",
+      "ObjectPath": "\\Events\\Default Work Unit\\TorchCrackle",
+      "GUID": "{4C6EC277-D395-4CBB-AEED-D0EC73BDAA9C}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "599581680"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{29F855E5-88DB-B6B5-9263-C9A3DA39F7CB}"
+ }
+}

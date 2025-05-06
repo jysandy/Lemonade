@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="154">
+	<SoundBanks>
+		<SoundBank Id="1417076610" Type="Event" GUID="{26ED23AA-BE75-4C5A-ABAE-F62AFF4393F3}" Language="SFX" Hash="{296EAF8F-21AA-FE35-7A1F-E42FC272171B}">
+			<ObjectPath>RustlingLeaf_Ambience</ObjectPath>
+			<ShortName>RustlingLeaf_Ambience</ShortName>
+			<Path>Event/RustlingLeaf_Ambience.bnk</Path>
+			<Media>
+				<File Id="1024108576" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Rustling_Leaf_Ambience.wav</ShortName>
+					<Path>Media/1024108576.wem</Path>
+					<CachePath>90/{90AC9702-B8C2-650F-9964-8CDC96511F42}.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1417076610" Name="RustlingLeaf_Ambience" ObjectPath="\Events\Default Work Unit\RustlingLeaf_Ambience" GUID="{26ED23AA-BE75-4C5A-ABAE-F62AFF4393F3}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="1024108576"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{E4C81921-698C-11D5-7679-D4A8E8F0BC65}</FileHash>
+</SoundBanksInfo>

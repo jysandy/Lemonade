@@ -6,7 +6,9 @@
 #include "GameFramework/GameModeBase.h"
 #include "LemonadeGameMode.generated.h"
 
-UCLASS(minimalapi)
+class ALemonadeLevelScriptActor;
+
+UCLASS()
 class ALemonadeGameMode : public AGameModeBase
 {
 	GENERATED_BODY()

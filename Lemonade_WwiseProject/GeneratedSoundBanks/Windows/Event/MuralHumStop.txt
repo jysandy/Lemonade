@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	336785206	MuralHumStop			\Default Work Unit\MuralHumStop	
+
